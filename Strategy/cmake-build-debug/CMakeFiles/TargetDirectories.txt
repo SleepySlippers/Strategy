@@ -1,0 +1,3 @@
+D:/CLineProjects/MyStrategy/cmake-build-debug/CMakeFiles/MyStrategy.dir
+D:/CLineProjects/MyStrategy/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CLineProjects/MyStrategy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
