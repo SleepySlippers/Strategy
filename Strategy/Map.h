@@ -2,15 +2,21 @@
 // Created by Arseny's on 09.04.2020.
 //
 
+
+class Map;
+extern Map* globalMap;
+
 #ifndef STRATEGY_MAP_H
 #define STRATEGY_MAP_H
 
 #include <cstdlib>
-#include "PhysicalObject.h"
+#include "Properties/PhysicalObject.h"
 #include "Colorize.h"
+//#include "MainHandler.h"
 
 const int MAP_WIDTH = 50;
 const int MAP_HEIGHT = 20;
+
 
 
 class Map {
@@ -25,8 +31,8 @@ public:
         }
     }
 
-    void Place(PhysicalObject *a, int x, int y){
-        map[y][x] = a;
+    void Place(PhysicalObject *a){
+        map[a->posY][a->posX] = a;
     }
 
     void MapRecalc(){
@@ -45,7 +51,7 @@ public:
     }
 
     bool IsEmpty(int x, int y){
-        return map[x][y] == nullptr;
+        return map[y][x] == nullptr;
     }
 
     void ReDrawMap(){
@@ -53,13 +59,13 @@ public:
         system("cls");
         for (int i = 0; i < MAP_HEIGHT; i++) {
             for (int j = 0; j < MAP_WIDTH; j++) {
-                if (!IsEmpty(i, j)){
-                    SetColor(map[i][j]->color, 0);
-                    std::cout << map[i][j]->appearnace;
+                if (!IsEmpty(j, i)){
+                    SetColor(map[i][j]->color, map[i][j]->foncolor);
+                    std::cout << map[i][j]->appearance;
                     SetColor(15, 0);
                 } else {
                     SetColor(15, 0);
-                    std::cout << ' ';
+                    std::cout << '.';
                     SetColor(15, 0);
                 }
             }

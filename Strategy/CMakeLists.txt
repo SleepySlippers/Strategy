@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
-project(Strategy)
+project(MyStrategy)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Strategy main.cpp Colorize.h Unit.h Movable.h PhysicalObject.h Hittable.h Warrior.h Swordmen.h MyUtilite.h Handleable.h Map.h MainHandler.h Named.h)
+add_executable(MyStrategy main.cpp Colorize.h AbstractUnits/Unit.h Properties/Movable.h Properties/PhysicalObject.h Properties/Hittable.h AbstractUnits/Warrior.h AbstractUnits/Swordman.h MyUtilite.h Properties/Handleable.h Map.h MainHandler.h Properties/Named.h AbstractUnits/Horseman.h AbstractUnits/Archer.h AbstractUnits/Building.h AbstractUnits/Townhall.h Factory/Spawner.h AbstractUnits/Worker.h Factory/FranceFactory.h Factory/EnglandFactory.h AbstractUnits/Barracks.h)

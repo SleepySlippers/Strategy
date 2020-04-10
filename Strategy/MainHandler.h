@@ -2,22 +2,27 @@
 // Created by Arseny's on 09.04.2020.
 //
 
+class MainHandler;
+extern MainHandler* mainHandler;
+
 #ifndef STRATEGY_MAINHANDLER_H
 #define STRATEGY_MAINHANDLER_H
 
 
-#include "Handleable.h"
-#include "Map.h"
-#include "Named.h"
-#include "Unit.h"
+//#include "Properties/Handleable.h"
+//#include "Map.h"
+#include "Properties/Named.h"
+#include "Properties/Movable.h"
+//#include "AbstractUnits/Unit.h"
 #include <sstream>
 
 class MainHandler : public Handleable {
-    Named* chosen = nullptr;
-    Map* globalMap;
 public:
+    Named* chosen = nullptr;
+    int lastfon;
+    //Map* globalMap;
 
-    MainHandler(Map *map) : globalMap(map){
+    MainHandler() {
 
     }
 
@@ -45,7 +50,12 @@ public:
         if (cmnd == "Choose"){
             in >> cmnd;
             if (names.count(cmnd)){
+                if (chosen != nullptr){
+                    dynamic_cast<PhysicalObject*>(chosen)->foncolor = lastfon;
+                }
                 chosen = names[cmnd];
+                lastfon = dynamic_cast<PhysicalObject*>(chosen)->foncolor;
+                dynamic_cast<PhysicalObject*>(chosen)->foncolor = 13;
                 return cmnd + " is chosen\n";
             } else {
                 return "Wrong name\n";
@@ -59,11 +69,11 @@ public:
                 return "Name changed to " + cmnd + "\n";
             }
         }
-        if (cmnd == "CreateUnit"){
+/*        if (cmnd == "CreateUnit"){
             Unit* un = new Unit();
-            globalMap->Place(un, 0, 0);
+            globalMap->Place(un);
             return "Unit created with name " + un->GetName() + "\n";
-        }
+        }*/
         if (cmnd == "Help" || cmnd == "help"){
             return Help();
         }
@@ -87,10 +97,10 @@ public:
             ans << dynamic_cast<Handleable *>(chosen)->CommandsCanHandle();
         }
         ans << "Global Commands:\n";
-        ans << "CreateUnit\nShowAllNames\nChoose %name%\nChosen\nChangeName\nEndTurn\nExit\n";
+        //ans << "CreateUnit\nShowAllNames\nChoose %name%\nChosen\nChangeName\nEndTurn\nExit\n";
+        ans << "ShowAllNames\nChoose %name%\nChosen\nChangeName\nEndTurn\nExit\n";
         return ans.str();
     }
 };
-
 
 #endif //STRATEGY_MAINHANDLER_H
