@@ -27,10 +27,10 @@ public:
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            Worker* tmp = globalSpawner->SpawnWorker();
+            Worker* tmp = mySpawner->SpawnWorker();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
-            tmp->ChangeName(tryname("Worker"));
+            tmp->ChangeName(tryName("Worker"));
             //tmp->appearance = 'W';
             ColoredString ans;
             ans.Add("Worker spawned with name ");

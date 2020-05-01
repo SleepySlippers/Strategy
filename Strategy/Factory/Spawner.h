@@ -3,8 +3,11 @@
 //
 
 
+#include "../AbstractUnits/PhysicalSquad.h"
+
 class Spawner;
-extern Spawner* globalSpawner;
+//extern Spawner* mySpawner;
+//extern Spawner* enemySpawner;
 
 #ifndef MYSTRATEGY_SPAWNER_H
 #define MYSTRATEGY_SPAWNER_H
@@ -17,7 +20,6 @@ extern Spawner* globalSpawner;
 //#include "../AbstractUnits/Worker.h"
 
 class Worker;
-class Swordsman;
 class Horseman;
 class Archer;
 class TownHall;
@@ -27,7 +29,7 @@ class Spawner {
 public:
     virtual Worker* SpawnWorker() = 0;
 
-    virtual Swordsman* SpawnSwordsman() = 0;
+    virtual PhysicalSquad * SpawnSwordsman() = 0;
 
     virtual Horseman* SpawnHorseman() = 0;
 

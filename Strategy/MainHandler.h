@@ -25,7 +25,7 @@ public:
     //int lastfon;
     //Map* globalMap;
 
-    MainHandler() {
+    MainHandler(int type = MY_HANDLE_TYPE) : Handleable(type) {
 
     }
 
@@ -60,8 +60,10 @@ public:
                 //lastfon = dynamic_cast<PhysicalObject*>(chosen)->fonColor;
                 //dynamic_cast<PhysicalObject*>(chosen)->fonColor = 13;
                 auto tmp = dynamic_cast<PhysicalObject*>(chosen);
-                chosenx = tmp->posX;
-                choseny = tmp->posY;
+                if (tmp != nullptr) {
+                    chosenx = tmp->posX;
+                    choseny = tmp->posY;
+                }
                 return cmnd + " is chosen\n";
             } else {
                 return "Wrong name\n";
@@ -93,22 +95,33 @@ public:
             return "Turn ended\n";
         }
         if (chosen != nullptr) {
-            auto tmp = dynamic_cast<Handleable *>(chosen)->HandleAction(command);
-            chosenx = dynamic_cast<PhysicalObject *>(chosen)->posX;
-            choseny = dynamic_cast<PhysicalObject *>(chosen)->posY;
-            return tmp;
+            if (cmnd == "Info"){
+                return dynamic_cast<Handleable *>(chosen)->HandleAction(command);
+            }
+            if (chosen->CanHandle(GetMyType())) {
+                auto tmp = dynamic_cast<Handleable *>(chosen)->HandleAction(command);
+                if (chosen != nullptr) {
+                    auto temp = dynamic_cast<PhysicalObject *>(chosen);
+                    if (temp != nullptr) {
+                        chosenx = temp->posX;
+                        choseny = temp->posY;
+                    }
+                }
+                return tmp;
+            }
+            return NSC;
         }
         return NSC;
     }
 
     std::vector<pair<string, string>> CommandsCanHandle() override {
         std::vector<pair<string, string>> ans;
-        ans.emplace_back("ShowAllNames", "- print all list of names of objects on board");
-        ans.emplace_back("Choose", "%name% - choose object with certain %name%");
-        ans.emplace_back("ChangeName", "%newname% - change object name to %newname% if object with %newname% not exist. Max %newname% length is 10.");
+        //ans.emplace_back("ShowAllNames", "- print all list of names of objects on board");
+        //ans.emplace_back("Choose", "%name% - choose object with certain %name%");
+        //ans.emplace_back("ChangeName", "%newname% - change object name to %newname% if object with %newname% not exist. Max %newname% length is 10.");
         ans.emplace_back("EndTurn", "- end turn and restore all move points");
         ans.emplace_back("Exit", "- close game");
-        if (chosen != nullptr){
+        if (chosen != nullptr && chosen->CanHandle(GetMyType())){
             ans += chosen->CommandsCanHandle();
         }
         return ans;
@@ -130,7 +143,7 @@ public:
             ans.Add(tmp[i].second);
             ans.Add("\n");
             if (tmp[i].first == "Exit"){
-                if (chosen != nullptr) {
+                if (chosen != nullptr && chosen->CanHandle(GetMyType())) {
                     ans.put('\0');
                     ans.Add(" ");
                     ans.Add("Object", BLACK, 13);

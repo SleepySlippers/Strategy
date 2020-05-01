@@ -50,6 +50,18 @@ public:
         movables.push_back(this);
     }
 
+    virtual ~Movable(){
+        auto i = movables.begin();
+        for (; i != movables.end(); i++){
+            if (*i == this){
+                break;
+            }
+        }
+        if (i != movables.end()) {
+            movables.erase(i);
+        }
+    }
+
     virtual void OnEndTurn(){
         RestoreMovePoints();
     }
@@ -99,6 +111,8 @@ public:
             }
             if (StrToDir(cmnd) != Fail){
                 Move(StrToDir(cmnd));
+            } else {
+                return "Wrong direction\n";
             }
             return "Moved to " + cmnd + "\n";
         }
@@ -134,7 +148,7 @@ public:
 
     std::vector<pair<string, string>> CommandsCanHandle() override {
         std::vector<pair<string, string>> ans = PhysicalObject::CommandsCanHandle();
-        ans.emplace_back("Move", "Left/Right/Top/Bottom");
+        ans.emplace_back("Move", "Left/Right/Up/Down");
         if (NEED_INFO) {
             ans.emplace_back("Info", "- full information");
         }

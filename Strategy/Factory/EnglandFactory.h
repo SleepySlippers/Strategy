@@ -13,6 +13,8 @@
 #include "../AbstractUnits/TownHall.h"
 #include "../AbstractUnits/Archer.h"
 #include "../AbstractUnits/Barracks.h"
+#include "../AbstractUnits/PhysicalSquad.h"
+#include "../AbstractUnits/SquadSwordsman.h"
 
 class EnglandFactory : public Spawner {
 public:
@@ -22,8 +24,17 @@ public:
         return ans;
     }
 
-    Swordsman *SpawnSwordsman() override {
+    /*Swordsman *SpawnSwordsman() override {
         Swordsman* ans = new Swordsman;
+        ans->fonColor = RED;
+        return ans;
+    }*/
+
+    PhysicalSquad * SpawnSwordsman() override {
+        PhysicalSquad * ans = new PhysicalSquad();
+        //Swordsman* ans = new Swordsman;
+        SquadSwordsman *tmp = new SquadSwordsman();
+        ans->squad->Add(tmp);
         ans->fonColor = RED;
         return ans;
     }

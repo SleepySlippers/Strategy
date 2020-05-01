@@ -14,7 +14,7 @@ using std::string;
 class Named;
 std::unordered_map<string, Named*> names;
 
-string tryname(const string &nm){
+string tryName(const string &nm){
     //if (names.count(nm)){
         for (int i = 1; true; i++){
             if (!names.count(nm + std::to_string(i))){
@@ -50,7 +50,7 @@ public:
         for (int i = 0; i < 3; i++){
             name += nameparts[rand() % PARTSCOUNT];
         }
-        names[name] = this;
+        ChangeName(tryName(name));
     }
 
     /*virtual ColoredString HandleAction(const std::string &command) override = 0;

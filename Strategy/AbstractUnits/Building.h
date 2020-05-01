@@ -32,6 +32,14 @@ public:
         return ans;
     }
 
+    bool CanHandle(int HandlerType) override {
+        return Hittable::CanHandle(HandlerType);
+    }
+
+    int &GetMyType() override {
+        return Hittable::GetMyType();
+    }
+
     std::vector<pair<string, string>> CommandsCanHandle() override {
         std::vector<pair<string, string>> ans = Hittable::CommandsCanHandle();
         ans += PhysicalObject::CommandsCanHandle();

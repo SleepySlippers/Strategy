@@ -102,6 +102,15 @@
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Horseman.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/InSquadUnit.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/SquadSwordsman.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Swordsman.h">
 			<Option target="MyStrategy"/>
 		</Unit>
@@ -126,13 +135,28 @@
 		<Unit filename="D:/CLionProjects/Strategy/Drawer.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/EnemyFactory.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/EnglandFactory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/FranceFactory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/MyFactory.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/Spawner.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Groups/Group.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Groups/InSquadWarrior.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Groups/Squad.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/MainHandler.h">

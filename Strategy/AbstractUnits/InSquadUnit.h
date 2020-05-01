@@ -1,24 +1,21 @@
 //
-// Created by Arseny's on 08.04.2020.
+// Created by Arseny's on 01.05.2020.
 //
 
-#ifndef STRATEGY_UNIT_H
-#define STRATEGY_UNIT_H
+#ifndef MYSTRATEGY_INSQUADUNIT_H
+#define MYSTRATEGY_INSQUADUNIT_H
 
 
-#include "../Properties/Movable.h"
 #include "../Properties/Hittable.h"
 #include "../Properties/Named.h"
+#include "../MyUtilite.h"
 
-class Unit : public Hittable, public Movable, public Named {
+class InSquadUnit : public Hittable, public Named {
 public:
+
     ColoredString HandleAction(const string &command) override{
         ColoredString ans;
         ColoredString tmp = Hittable::HandleAction(command);
-        if (tmp != NSC){
-            ans.Add(tmp);
-        }
-        tmp = Movable::HandleAction(command);
         if (tmp != NSC){
             ans.Add(tmp);
         }
@@ -36,22 +33,12 @@ public:
         STANDARD_HELP_FUNCTION_BODY
     }
 
-    bool CanHandle(int HandlerType) override {
-        return Hittable::CanHandle(HandlerType);
-    }
-
-    int &GetMyType() override {
-        return Hittable::GetMyType();
-    }
-
     std::vector<pair<string, string>> CommandsCanHandle() override {
-        std::vector<pair<string, string>> ans = Movable::CommandsCanHandle();
-        ans += Hittable::CommandsCanHandle();
+        std::vector<pair<string, string>> ans = Hittable::CommandsCanHandle();
         ans += Named::CommandsCanHandle();
         return ans;
     }
-
 };
 
 
-#endif //STRATEGY_UNIT_H
+#endif //MYSTRATEGY_INSQUADUNIT_H

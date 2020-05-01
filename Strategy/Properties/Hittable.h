@@ -5,6 +5,7 @@
 #ifndef STRATEGY_HITTABLE_H
 #define STRATEGY_HITTABLE_H
 
+#include "Handleable.h"
 
 class Hittable : public Handleable {
 public:
@@ -40,14 +41,17 @@ public:
         return NSC;
     }
 
-    std::vector<pair<string, string>> CommandsCanHandle() override {
-        std::vector<pair<string, string>> ans;
-        if (NEED_INFO) {
-            ans.push_back({"Info", "- full information"});
-        }
-        return ans;
-    }
+    virtual std::vector<pair<string, string>> CommandsCanHandle() override;
+
 };
+
+std::vector<pair<string, string>> Hittable::CommandsCanHandle() {
+    std::vector<pair<string, string>> ans;
+    if (NEED_INFO) {
+        ans.push_back({"Info", "- full information"});
+    }
+    return ans;
+}
 
 
 #endif //STRATEGY_HITTABLE_H

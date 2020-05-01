@@ -16,6 +16,9 @@
 }*/
 
 #include <vector>
+using std::vector;
+#include <map>
+using std::map;
 
 template < typename T >
 void removeNullptrs(std::vector<T*> &v){
@@ -46,6 +49,17 @@ bool on_board(int x, int y, int W, int H){
 template <typename T>
 void operator += (std::vector<T>& first, const std::vector<T>& other){
     first.insert(first.end(), other.cbegin(), other.cend());
+}
+
+template < typename Key, typename Value = int>
+void operator += (map<Key, Value> & first, map<Key, Value> && other){
+    for (auto &&it : other){
+        if (!first.count(it.first)){
+            first.insert(std::move(it));
+        } else {
+            first[it.first] += it.second;
+        }
+    }
 }
 
 #endif //STRATEGY_MYUTILITE_H

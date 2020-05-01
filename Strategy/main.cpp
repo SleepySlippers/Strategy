@@ -4,6 +4,8 @@
 #include "Factory/FranceFactory.h"
 #include "Factory/EnglandFactory.h"
 #include "Drawer.h"
+#include "Factory/MyFactory.h"
+#include "Factory/EnemyFactory.h"
 
 
 #include <iostream>
@@ -12,8 +14,11 @@
 #include <conio.h>
 
 
-Spawner* globalSpawner;
-MainHandler* mainHandler;
+MyFactory* mySpawner = new MyFactory(MY_HANDLE_TYPE);
+MainHandler* mainHandler = new MainHandler(MY_HANDLE_TYPE);
+
+EnemyFactory* enemySpawner = new EnemyFactory(ENEMY_HANDLE_TYPE);
+MainHandler* enemyHandler = new MainHandler(ENEMY_HANDLE_TYPE);
 Map* globalMap;
 
 #define DirColor (YELLOW)
@@ -21,8 +26,15 @@ Map* globalMap;
 
 Drawer draw;
 
+//#define _DEB
+
 
 void FractionChoose(){
+#ifdef _DEB
+    mySpawner->spwnr = new FranceFactory;
+    enemySpawner->spwnr = new EnglandFactory;
+    return;
+#endif
     string tmp;
     ColoredString ans;
     while (true){
@@ -60,19 +72,53 @@ void FractionChoose(){
         //std::cout << "Wrong fraction" << std::endl;
     }
     if (tmp == "France"){
-        globalSpawner = new FranceFactory;
+        mySpawner->spwnr = new FranceFactory;
+        enemySpawner->spwnr = new EnglandFactory;
     } else {
-        globalSpawner = new EnglandFactory;
+        mySpawner->spwnr = new EnglandFactory;
+        enemySpawner->spwnr = new FranceFactory;
     }
 }
 
 void TownHallInit(){
-    TownHall *Th = globalSpawner->SpawnTownhall();
+    TownHall *Th = mySpawner->SpawnTownhall();
     Th->TeleportTo(5, 10);
     globalMap->Place(Th);
     Th->ChangeName("TownHall");
-    mainHandler = new MainHandler;
     mainHandler->HandleAction("Choose TownHall");
+
+    Th = enemySpawner->SpawnTownhall();
+    Th->TeleportTo(15, 10);
+    globalMap->Place(Th);
+    Th->ChangeName("EnemyTownHall");
+    {
+        auto tmp = enemySpawner->SpawnSwordsman();
+        tmp->TeleportTo(10, 10);
+        globalMap->Place(tmp);
+        tmp->ChangeName("EnemySwordsman");
+    }
+    {
+        auto tmp = mySpawner->SpawnSwordsman();
+        tmp->TeleportTo(9, 10);
+        globalMap->Place(tmp);
+        tmp->ChangeName("MySwordsman");
+        mainHandler->HandleAction("Choose MySwordsman");
+    }
+    mainHandler->HandleAction("EndTurn");
+#ifdef _DEB
+    PhysicalSquad *tmp = mySpawner->SpawnSwordsman();
+    tmp->TeleportTo(5, 5);
+    globalMap->Place(tmp);
+    tmp->ChangeName("Sword1");
+    tmp = mySpawner->SpawnSwordsman();
+    tmp->TeleportTo(5, 6);
+    globalMap->Place(tmp);
+    tmp->ChangeName("Sword2");
+    mainHandler->HandleAction("EndTurn");
+    mainHandler->HandleAction("Choose Sword1");
+    mainHandler->HandleAction("Move Down");
+    mainHandler->HandleAction("EndTurn");
+#endif
 }
 
 void drawHelpInfo(){
@@ -93,7 +139,7 @@ void drawHelpInfo(){
     tmp.Add("\n");
     tmp.Add("You can move ");
     tmp.Add("chosen", BLACK, 13);
-    tmp.Add(" field by arrows or command Choose %name%\n");
+    tmp.Add(" field by arrows\n");// or command Choose %name%\n");
     tmp.Add("You can use ctr + arrow to write the appropriate direction,\n it will be painted ");
     tmp.Add("yellow", DirColor);
     tmp.Add("\n");
@@ -152,6 +198,7 @@ void moveChosen(int ch){
     }
     if (on_board(newx, newy, MAP_WIDTH, MAP_HEIGHT)) {
         if (!globalMap->IsEmpty(newx, newy)){
+            // TODO may be PhysicalObject but no Named
             auto tmp = dynamic_cast<Named*>(globalMap->Get(newx, newy));
             mainHandler->HandleAction("Choose " + tmp->GetName());
         } else {

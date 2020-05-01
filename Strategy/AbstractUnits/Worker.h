@@ -24,12 +24,12 @@ public:
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            Barracks* tmp = globalSpawner->SpawnBarracks();
+            Barracks* tmp = mySpawner->SpawnBarracks();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
-            tmp->ChangeName(tryname("Barracks"));
+            tmp->ChangeName(tryName("Barracks"));
             //tmp->appearance = 'B';
-
+            nowMovePoints = 0;
             return "Barracks spawned with name " + tmp->GetName() + "\n";
         }
         return Unit::HandleAction(command);

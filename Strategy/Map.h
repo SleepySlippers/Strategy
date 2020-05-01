@@ -59,6 +59,13 @@ public:
         return map[y][x] == nullptr;
     }
 
+    void Delete(int x, int y){
+        if (!IsEmpty(x, y)) {
+            delete map[y][x];
+            map[y][x] = nullptr;
+        }
+    }
+
     void ReDrawMap(){
         MapRecalc();
         system("cls");

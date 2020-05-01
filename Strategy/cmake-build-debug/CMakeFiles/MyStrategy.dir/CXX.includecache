@@ -21,8 +21,8 @@ D:/CLionProjects/Strategy/Colorize.h
 D:/CLionProjects/Strategy/Map.h
 Swordsman.h
 D:/CLionProjects/Strategy/AbstractUnits/Swordsman.h
-../Factory/Spawner.h
-D:/CLionProjects/Strategy/Factory/Spawner.h
+../Factory/MyFactory.h
+D:/CLionProjects/Strategy/Factory/MyFactory.h
 
 D:/CLionProjects/Strategy/AbstractUnits/Building.h
 ../Properties/PhysicalObject.h
@@ -33,6 +33,28 @@ D:/CLionProjects/Strategy/Properties/Named.h
 D:/CLionProjects/Strategy/AbstractUnits/Horseman.h
 Warrior.h
 D:/CLionProjects/Strategy/AbstractUnits/Warrior.h
+
+D:/CLionProjects/Strategy/AbstractUnits/InSquadUnit.h
+../Properties/Hittable.h
+D:/CLionProjects/Strategy/Properties/Hittable.h
+../Properties/Named.h
+D:/CLionProjects/Strategy/Properties/Named.h
+../MyUtilite.h
+D:/CLionProjects/Strategy/MyUtilite.h
+
+D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h
+../Properties/Movable.h
+D:/CLionProjects/Strategy/Properties/Movable.h
+../Groups/Squad.h
+D:/CLionProjects/Strategy/Groups/Squad.h
+../Properties/Named.h
+D:/CLionProjects/Strategy/Properties/Named.h
+../Map.h
+D:/CLionProjects/Strategy/Map.h
+
+D:/CLionProjects/Strategy/AbstractUnits/SquadSwordsman.h
+../Groups/InSquadWarrior.h
+D:/CLionProjects/Strategy/Groups/InSquadWarrior.h
 
 D:/CLionProjects/Strategy/AbstractUnits/Swordsman.h
 Warrior.h
@@ -96,6 +118,10 @@ D:/CLionProjects/Strategy/ColoredString.h
 MyUtilite.h
 D:/CLionProjects/Strategy/MyUtilite.h
 
+D:/CLionProjects/Strategy/Factory/EnemyFactory.h
+Spawner.h
+D:/CLionProjects/Strategy/Factory/Spawner.h
+
 D:/CLionProjects/Strategy/Factory/EnglandFactory.h
 Spawner.h
 D:/CLionProjects/Strategy/Factory/Spawner.h
@@ -111,6 +137,10 @@ D:/CLionProjects/Strategy/AbstractUnits/TownHall.h
 D:/CLionProjects/Strategy/AbstractUnits/Archer.h
 ../AbstractUnits/Barracks.h
 D:/CLionProjects/Strategy/AbstractUnits/Barracks.h
+../AbstractUnits/PhysicalSquad.h
+D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h
+../AbstractUnits/SquadSwordsman.h
+D:/CLionProjects/Strategy/AbstractUnits/SquadSwordsman.h
 
 D:/CLionProjects/Strategy/Factory/FranceFactory.h
 Spawner.h
@@ -125,8 +155,42 @@ D:/CLionProjects/Strategy/AbstractUnits/Horseman.h
 D:/CLionProjects/Strategy/AbstractUnits/TownHall.h
 ../AbstractUnits/Archer.h
 D:/CLionProjects/Strategy/AbstractUnits/Archer.h
+../AbstractUnits/PhysicalSquad.h
+D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h
+../AbstractUnits/SquadSwordsman.h
+D:/CLionProjects/Strategy/AbstractUnits/SquadSwordsman.h
+
+D:/CLionProjects/Strategy/Factory/MyFactory.h
+Spawner.h
+D:/CLionProjects/Strategy/Factory/Spawner.h
 
 D:/CLionProjects/Strategy/Factory/Spawner.h
+../AbstractUnits/PhysicalSquad.h
+D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h
+
+D:/CLionProjects/Strategy/Groups/Group.h
+../ColoredString.h
+D:/CLionProjects/Strategy/ColoredString.h
+map
+-
+
+D:/CLionProjects/Strategy/Groups/InSquadWarrior.h
+sstream
+-
+../AbstractUnits/InSquadUnit.h
+D:/CLionProjects/Strategy/AbstractUnits/InSquadUnit.h
+Group.h
+D:/CLionProjects/Strategy/Groups/Group.h
+
+D:/CLionProjects/Strategy/Groups/Squad.h
+Group.h
+D:/CLionProjects/Strategy/Groups/Group.h
+list
+-
+../MyUtilite.h
+D:/CLionProjects/Strategy/MyUtilite.h
+InSquadWarrior.h
+D:/CLionProjects/Strategy/Groups/InSquadWarrior.h
 
 D:/CLionProjects/Strategy/MainHandler.h
 Properties/Named.h
@@ -153,6 +217,8 @@ iostream
 -
 vector
 -
+map
+-
 
 D:/CLionProjects/Strategy/Properties/Handleable.h
 iostream
@@ -163,6 +229,8 @@ map
 -
 
 D:/CLionProjects/Strategy/Properties/Hittable.h
+Handleable.h
+D:/CLionProjects/Strategy/Properties/Handleable.h
 
 D:/CLionProjects/Strategy/Properties/Movable.h
 sstream
@@ -201,6 +269,10 @@ Factory/EnglandFactory.h
 D:/CLionProjects/Strategy/Factory/EnglandFactory.h
 Drawer.h
 D:/CLionProjects/Strategy/Drawer.h
+Factory/MyFactory.h
+D:/CLionProjects/Strategy/Factory/MyFactory.h
+Factory/EnemyFactory.h
+D:/CLionProjects/Strategy/Factory/EnemyFactory.h
 iostream
 -
 ios

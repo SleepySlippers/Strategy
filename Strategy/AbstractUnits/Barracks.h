@@ -11,7 +11,7 @@
 #include "../Colorize.h"
 #include "../Map.h"
 #include "Swordsman.h"
-#include "../Factory/Spawner.h"
+#include "../Factory/MyFactory.h"
 
 class Barracks : public Building {
 public:
@@ -30,10 +30,10 @@ public:
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            Swordsman* tmp = globalSpawner->SpawnSwordsman();
+            PhysicalSquad* tmp = mySpawner->SpawnSwordsman();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
-            tmp->ChangeName(tryname("Swordsman"));
+            tmp->ChangeName(tryName("Swordsman"));
             return "Swordsman spawned with name " + tmp->GetName() + "\n";
         }
         return Building::HandleAction(command);
