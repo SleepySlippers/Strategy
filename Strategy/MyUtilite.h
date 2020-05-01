@@ -15,4 +15,37 @@
     return ans;
 }*/
 
+#include <vector>
+
+template < typename T >
+void removeNullptrs(std::vector<T*> &v){
+    int l = 0;
+    for (int i = 0; i < v.size(); i++){
+        if (v[i] != nullptr){
+            std::swap(v[i], v[l]);
+            l++;
+        }
+    }
+    while (v.size() && v.back() == nullptr)
+        v.pop_back();
+}
+
+std::string repeatString(const std::string& s, int n){
+    std::string ans;
+    for (int i = 0; i < n; i++){
+        ans += s;
+    }
+    return ans;
+}
+
+bool on_board(int x, int y, int W, int H){
+    if (x < 0 || y < 0) return false;
+    return !(x >= W || y >= H);
+}
+
+template <typename T>
+void operator += (std::vector<T>& first, const std::vector<T>& other){
+    first.insert(first.end(), other.cbegin(), other.cend());
+}
+
 #endif //STRATEGY_MYUTILITE_H

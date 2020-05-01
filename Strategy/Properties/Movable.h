@@ -41,7 +41,7 @@ int dy[4] = {0, -1, 0, 1};
 class Movable;
 std::vector < Movable* > movables;
 
-class Movable : public PhysicalObject, public Handleable {
+class Movable : public PhysicalObject {
 public:
     int maxMovePoints = 3;
     int nowMovePoints = 0;
@@ -85,7 +85,7 @@ public:
         nowMovePoints = maxMovePoints;
     }
 
-    std::string HandleAction(const std::string &command) override{
+    ColoredString HandleAction(const std::string &command) override{
         std::istringstream in(command);
         std::string cmnd;
         in >> cmnd;
@@ -103,10 +103,24 @@ public:
             return "Moved to " + cmnd + "\n";
         }
         if (cmnd == "Info"){
-            std::ostringstream ans;
-            ans << nowMovePoints << " move points left\nWill have " << maxMovePoints << " move points on the next move\n";
-            ans << "Position x: " << posX << " y: " << posY << "\n";
-            return ans.str();
+            ColoredString ans;
+            if (nowMovePoints == 0) {
+                ans.Add(std::to_string(nowMovePoints), RED);
+            } else {
+                ans.Add(std::to_string(nowMovePoints), GREEN);
+            }
+            ans.Add(" / ");
+            ans.Add(std::to_string(maxMovePoints), YELLOW);
+            ans.Add(" move points. ");
+            if (nowMovePoints == 0) {
+                ans.Add("EndTurn", YELLOW);
+                ans.Add(" to restore it.");
+            }
+            ans.Add("\n");
+            ans.Add(PhysicalObject::HandleAction("Info"));
+            //ans <<  << " move points left\nWill have " <<  << " move points on the next move\n";
+            // TODO
+            return ans;
         }
         if (cmnd == "Help" || cmnd == "help"){
             return Help();
@@ -114,9 +128,22 @@ public:
         return NSC;
     }
 
-    std::string CommandsCanHandle() override{
-        return "Move Left/Right/Top/Bottom\nInfo\n";
+    ColoredString Help() override {
+        STANDARD_HELP_FUNCTION_BODY
     }
+
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans = PhysicalObject::CommandsCanHandle();
+        ans.emplace_back("Move", "Left/Right/Top/Bottom");
+        if (NEED_INFO) {
+            ans.emplace_back("Info", "- full information");
+        }
+        return ans;
+    }
+
+    /*ColoredString CommandsCanHandle() override{
+        return "Move Left/Right/Top/Bottom\nInfo\n";
+    }*/
 };
 
 

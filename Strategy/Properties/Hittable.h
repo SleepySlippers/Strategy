@@ -21,14 +21,18 @@ public:
 
     virtual void OnDeath(){}
 
-    std::string HandleAction(const std::string& command) override{
+    ColoredString HandleAction(const std::string& command) override{
         std::istringstream in(command);
         std::string cmnd;
         in >> cmnd;
         if (cmnd == "Info"){
-            std::ostringstream ans;
-            ans << "HP is " << hp << "\nDefence is " << defence << "%\n";
-            return ans.str();
+            ColoredString ans;
+            ans.Add("HP is ");
+            ans.Add(hp, YELLOW);
+            ans.Add("\nDefence is ");
+            ans.Add(defence, YELLOW);
+            ans.Add("%\n");
+            return ans;
         }
         if (cmnd == "Help" || cmnd == "help"){
             return Help();
@@ -36,8 +40,12 @@ public:
         return NSC;
     }
 
-    std::string CommandsCanHandle() override{
-        return "Info\n";
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans;
+        if (NEED_INFO) {
+            ans.push_back({"Info", "- full information"});
+        }
+        return ans;
     }
 };
 

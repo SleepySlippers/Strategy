@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/CLineProjects/Strategy/cmake-build-debug"/>
+				<Option working_dir="D:/CLionProjects/Strategy/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MyStrategy">
-				<Option output="D:/CLineProjects/Strategy/cmake-build-debug/MyStrategy.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLineProjects/Strategy/cmake-build-debug"/>
+				<Option output="D:/CLionProjects/Strategy/cmake-build-debug/MyStrategy.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects/Strategy/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -37,15 +37,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyStrategy"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyStrategy"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MyStrategy/fast">
-				<Option output="D:/CLineProjects/Strategy/cmake-build-debug/MyStrategy.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/CLineProjects/Strategy/cmake-build-debug"/>
+				<Option output="D:/CLionProjects/Strategy/cmake-build-debug/MyStrategy.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects/Strategy/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,100 +63,106 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyStrategy/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyStrategy/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/CLineProjects/Strategy/cmake-build-debug"/>
+				<Option working_dir="D:/CLionProjects/Strategy/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/CLineProjects/Strategy/cmake-build-debug"/>
+				<Option working_dir="D:/CLionProjects/Strategy/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLineProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Strategy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Archer.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Archer.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Barracks.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Barracks.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Building.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Building.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Horseman.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Horseman.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Swordman.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Swordsman.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Townhall.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/TownHall.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Unit.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Unit.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Warrior.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Warrior.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/AbstractUnits/Worker.h">
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Worker.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Colorize.h">
+		<Unit filename="D:/CLionProjects/Strategy/ColoredString.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Factory/EnglandFactory.h">
+		<Unit filename="D:/CLionProjects/Strategy/Colorize.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Factory/FranceFactory.h">
+		<Unit filename="D:/CLionProjects/Strategy/Drawer.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Factory/Spawner.h">
+		<Unit filename="D:/CLionProjects/Strategy/Factory/EnglandFactory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/MainHandler.h">
+		<Unit filename="D:/CLionProjects/Strategy/Factory/FranceFactory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Map.h">
+		<Unit filename="D:/CLionProjects/Strategy/Factory/Spawner.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/MyUtilite.h">
+		<Unit filename="D:/CLionProjects/Strategy/MainHandler.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Properties/Handleable.h">
+		<Unit filename="D:/CLionProjects/Strategy/Map.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Properties/Hittable.h">
+		<Unit filename="D:/CLionProjects/Strategy/MyUtilite.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Properties/Movable.h">
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Handleable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Properties/Named.h">
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Hittable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/Properties/PhysicalObject.h">
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Movable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/main.cpp">
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Named.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLineProjects/Strategy/CMakeLists.txt">
+		<Unit filename="D:/CLionProjects/Strategy/Properties/PhysicalObject.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/main.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

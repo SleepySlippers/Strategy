@@ -25,9 +25,15 @@
 #define YELLOW 14
 #define WHITE 15
 
-void SetColor(int text, int fon){
+void SetColor(int text = WHITE, int fon = BLACK){
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(h, (fon << 4) + text);
+}
+
+void SetCurs(short i, short j){
+    HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD c = { j, i };
+    SetConsoleCursorPosition(h, c);
 }
 
 #endif //STRATEGY_COLORIZE_H

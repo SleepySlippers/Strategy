@@ -10,30 +10,30 @@ extern Spawner* globalSpawner;
 #define MYSTRATEGY_SPAWNER_H
 
 
-//#include "../AbstractUnits/Swordman.h"
+//#include "../AbstractUnits/Swordsman.h"
 //#include "../AbstractUnits/Horseman.h"
 //#include "../AbstractUnits/Archer.h"
-//#include "../AbstractUnits/Townhall.h"
+//#include "../AbstractUnits/TownHall.h"
 //#include "../AbstractUnits/Worker.h"
 
 class Worker;
-class Swordman;
+class Swordsman;
 class Horseman;
 class Archer;
-class Townhall;
+class TownHall;
 class Barracks;
 
 class Spawner {
 public:
     virtual Worker* SpawnWorker() = 0;
 
-    virtual Swordman* SpawnSwordman() = 0;
+    virtual Swordsman* SpawnSwordsman() = 0;
 
     virtual Horseman* SpawnHorseman() = 0;
 
     virtual Archer* SpawnArcher() = 0;
 
-    virtual Townhall* SpawnTownhall() = 0;
+    virtual TownHall* SpawnTownhall() = 0;
 
     virtual Barracks* SpawnBarracks() = 0;
 };

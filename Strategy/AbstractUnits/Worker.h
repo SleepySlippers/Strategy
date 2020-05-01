@@ -16,11 +16,7 @@ public:
         color = WHITE;
     }
 
-    string CommandsCanHandle() override {
-        return "BuildBarracks\n" + Unit::CommandsCanHandle();
-    }
-
-    std::string HandleAction(const std::string &command) override {
+    ColoredString HandleAction(const std::string &command) override {
         std::istringstream in(command);
         std::string cmnd;
         in >> cmnd;
@@ -33,10 +29,17 @@ public:
             globalMap->Place(tmp);
             tmp->ChangeName(tryname("Barracks"));
             //tmp->appearance = 'B';
+
             return "Barracks spawned with name " + tmp->GetName() + "\n";
         }
         return Unit::HandleAction(command);
         return NSC;
+    }
+
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans = Unit::CommandsCanHandle();
+        ans.push_back({"BuildBarracks", "- build an Barracks in right cell if it's free"});
+        return ans;
     }
 };
 

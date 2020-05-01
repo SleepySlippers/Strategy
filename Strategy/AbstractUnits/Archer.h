@@ -15,7 +15,7 @@ public:
         hp = 80;
         defence = 20;
         attack = 50;
-        attackDistance = 6;
+        attackRange = 6;
     }
 };
 

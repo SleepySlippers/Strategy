@@ -53,11 +53,31 @@ public:
         names[name] = this;
     }
 
-    virtual std::string HandleAction(const std::string &command) override = 0;
+    /*virtual ColoredString HandleAction(const std::string &command) override = 0;
 
-    virtual string CommandsCanHandle() override = 0;
+    virtual ColoredString CommandsCanHandle() override = 0;*/
 
-    virtual ~Named(){};
+    ColoredString HandleAction(const string &command) override{
+        if (command == "Info"){
+            ColoredString tmp;
+            tmp.Add("My name is ");
+            tmp.Add(name, YELLOW);
+            tmp.Add("\n");
+            return tmp;
+        } else {
+            return NSC;
+        }
+    }
+
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans;
+        if (NEED_INFO) {
+            ans.emplace_back("Info", "- full information");
+        }
+        return ans;
+    }
+
+    virtual ~Named()= default;;
 };
 
 

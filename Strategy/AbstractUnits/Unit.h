@@ -12,27 +12,35 @@
 
 class Unit : public Movable, public Hittable, public Named {
 public:
-    string HandleAction(const string &command) override{
-        std::ostringstream ans;
-        string tmp = Movable::HandleAction(command);
+    ColoredString HandleAction(const string &command) override{
+        ColoredString ans;
+        ColoredString tmp = Hittable::HandleAction(command);
         if (tmp != NSC){
-            ans << tmp;
+            ans.Add(tmp);
         }
-        tmp = Hittable::HandleAction(command);
+        tmp = Movable::HandleAction(command);
         if (tmp != NSC){
-            ans << tmp;
+            ans.Add(tmp);
         }
-        if (ans.str().empty()){
+        tmp = Named::HandleAction(command);
+        if (tmp != NSC){
+            ans.Add(tmp);
+        }
+        if (!ans.size()){
             return NSC;
         }
-        return ans.str();
+        return ans;
     }
 
-    string CommandsCanHandle() override{
-        std::ostringstream ans;
-        ans << Hittable::CommandsCanHandle();
-        ans << Movable::CommandsCanHandle();
-        return ans.str();
+    ColoredString Help() override {
+        STANDARD_HELP_FUNCTION_BODY
+    }
+
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans = Movable::CommandsCanHandle();
+        ans += Hittable::CommandsCanHandle();
+        ans += Named::CommandsCanHandle();
+        return ans;
     }
 
 };

@@ -12,6 +12,7 @@ extern Map* globalMap;
 #include <cstdlib>
 #include "Properties/PhysicalObject.h"
 #include "Colorize.h"
+#include "ColoredString.h"
 //#include "MainHandler.h"
 
 const int MAP_WIDTH = 50;
@@ -33,6 +34,10 @@ public:
 
     void Place(PhysicalObject *a){
         map[a->posY][a->posX] = a;
+    }
+
+    PhysicalObject* Get(int x, int y){
+        return map[y][x];
     }
 
     void MapRecalc(){
@@ -60,7 +65,7 @@ public:
         for (int i = 0; i < MAP_HEIGHT; i++) {
             for (int j = 0; j < MAP_WIDTH; j++) {
                 if (!IsEmpty(j, i)){
-                    SetColor(map[i][j]->color, map[i][j]->foncolor);
+                    SetColor(map[i][j]->color, map[i][j]->fonColor);
                     std::cout << map[i][j]->appearance;
                     SetColor(15, 0);
                 } else {
@@ -72,6 +77,31 @@ public:
             std::cout << "\n";
         }
     }
+
+    ColoredString GetMap(){
+        MapRecalc();
+        ColoredString ans;
+        for (int i = 0; i < MAP_HEIGHT; i++) {
+            for (int j = 0; j < MAP_WIDTH; j++) {
+                if (!IsEmpty(j, i)){
+                    //SetColor(map[i][j]->color, map[i][j]->fonColor);
+                    //std::cout << map[i][j]->appearance;
+                    //SetColor(15, 0);
+                    ans.Add(string(1, map[i][j]->appearance), map[i][j]->color, map[i][j]->fonColor);
+                } else {
+                    //SetColor(15, 0);
+                    //std::cout << '.';
+                    //SetColor(15, 0);
+                    ans.Add(".");
+                }
+            }
+            //std::cout << "\n";
+            ans.Add("\n");
+        }
+        return ans;
+    }
+
+
 };
 
 #endif //STRATEGY_MAP_H

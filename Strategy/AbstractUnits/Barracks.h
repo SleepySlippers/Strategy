@@ -10,7 +10,7 @@
 #include "Building.h"
 #include "../Colorize.h"
 #include "../Map.h"
-#include "Swordman.h"
+#include "Swordsman.h"
 #include "../Factory/Spawner.h"
 
 class Barracks : public Building {
@@ -20,25 +20,29 @@ public:
         color = BROWN;
     }
 
-    string CommandsCanHandle() override {
-        return "SpawnSwordman\n";
-    }
 
-    std::string HandleAction(const std::string &command) override {
+
+    ColoredString HandleAction(const std::string &command) override {
         std::istringstream in(command);
         std::string cmnd;
         in >> cmnd;
-        if (cmnd == "SpawnSwordman"){
+        if (cmnd == "SpawnSwordsman"){
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            Swordman* tmp = globalSpawner->SpawnSwordman();
+            Swordsman* tmp = globalSpawner->SpawnSwordsman();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
-            tmp->ChangeName(tryname("Swordman"));
-            return "Swordman spawned with name " + tmp->GetName() + "\n";
+            tmp->ChangeName(tryname("Swordsman"));
+            return "Swordsman spawned with name " + tmp->GetName() + "\n";
         }
-        return NSC;
+        return Building::HandleAction(command);
+    }
+
+    std::vector<pair<string, string>> CommandsCanHandle() override {
+        std::vector<pair<string, string>> ans = Building::CommandsCanHandle();
+        ans.push_back({"SpawnSwordsman", "- spawn an Swordsman to right cell if it's free"});
+        return ans;
     }
 };
 
