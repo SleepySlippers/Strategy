@@ -5,47 +5,20 @@
 #ifndef MYSTRATEGY_BUILDING_H
 #define MYSTRATEGY_BUILDING_H
 
-
 #include "../Properties/PhysicalObject.h"
 #include "../Properties/Named.h"
+#include "../Properties/Hittable.h"
 
 class Building : public Named, public PhysicalObject, public Hittable {
 public:
 
-    ColoredString HandleAction(const string &command) override{
-        ColoredString ans;
-        ColoredString tmp = Hittable::HandleAction(command);
-        if (tmp != NSC){
-            ans.Add(tmp);
-        }
-        tmp = PhysicalObject::HandleAction(command);
-        if (tmp != NSC){
-            ans.Add(tmp);
-        }
-        tmp = Named::HandleAction(command);
-        if (tmp != NSC){
-            ans.Add(tmp);
-        }
-        if (!ans.size()){
-            return NSC;
-        }
-        return ans;
-    }
+    ColoredString HandleAction(const string &command) override;
 
-    bool CanHandle(int HandlerType) override {
-        return Hittable::CanHandle(HandlerType);
-    }
+    bool CanHandle(int HandlerType) override;
 
-    int &GetMyType() override {
-        return Hittable::GetMyType();
-    }
+    int &GetMyType() override;
 
-    std::vector<pair<string, string>> CommandsCanHandle() override {
-        std::vector<pair<string, string>> ans = Hittable::CommandsCanHandle();
-        ans += PhysicalObject::CommandsCanHandle();
-        ans += Named::CommandsCanHandle();
-        return ans;
-    }
+    std::vector<pair<string, string>> CommandsCanHandle() override;
 
     virtual ~Building()= default;
 };

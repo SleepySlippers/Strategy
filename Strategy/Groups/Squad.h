@@ -6,9 +6,9 @@
 #define MYSTRATEGY_SQUAD_H
 
 
+#include "../MyUtility.h"
 #include "Group.h"
 #include <list>
-#include "../MyUtilite.h"
 #include "InSquadWarrior.h"
 
 class Squad : public Group {
@@ -33,7 +33,8 @@ public:
         map<string, int> ans;
         for (auto it: _children){
             //ans.merge(it->ReCount());
-            ans += it->ReCount();
+            //ans += it->ReCount();
+            AddMap(ans, it->ReCount());
         }
         return ans;
     }
@@ -41,7 +42,8 @@ public:
     vector<InSquadWarrior*> GetAllMembers() override {
         vector<InSquadWarrior*> ans;
         for (auto &it: _children){
-            ans += it->GetAllMembers();
+            //ans += it->GetAllMembers();
+            AddVector(ans, it->GetAllMembers());
         }
         return ans;
     }
@@ -49,14 +51,18 @@ public:
     ColoredString GetInfo() override {
         map<string, int> tmp = ReCount();
         ColoredString ans;
+        ans.Add("\nStrength:\n");
         for (auto &it : tmp){
+            ans.Add("  ");
             ans.Add(it.first, YELLOW);
             ans.Add(": ");
             ans.Add(it.second, GREEN);
+            ans.Add("\n");
         }
-        ans.Add("\n");
+        ans.Add("\nSquad members:\n");
         auto temp = GetAllMembers();
         for (auto &it : temp){
+            ans.Add("->");
             ans.Add(it->HandleAction("Info"));
         }
         return ans;

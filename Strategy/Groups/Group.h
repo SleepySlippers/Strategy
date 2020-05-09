@@ -6,7 +6,7 @@
 #define MYSTRATEGY_GROUP_H
 
 
-#include "../ColoredString.h"
+#include "../DrawTools/ColoredString.h"
 
 #include <map>
 using std::map;

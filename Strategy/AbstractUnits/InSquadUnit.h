@@ -8,25 +8,31 @@
 
 #include "../Properties/Hittable.h"
 #include "../Properties/Named.h"
-#include "../MyUtilite.h"
+#include "../MyUtility.h"
 
 class InSquadUnit : public Hittable, public Named {
 public:
 
     ColoredString HandleAction(const string &command) override{
-        ColoredString ans;
-        ColoredString tmp = Hittable::HandleAction(command);
+        std::istringstream in(command);
+        string cmnd;
+        in >> cmnd;
+        // TODO
+        if (cmnd == "Info"){
+            ColoredString ans;
+            ans.Add(Named::HandleAction("Info"));
+            ans.Add(Hittable::HandleAction("Info"));
+            return ans;
+        }
+        ColoredString tmp = Named::HandleAction(command);
         if (tmp != NSC){
-            ans.Add(tmp);
+            return tmp;
         }
-        tmp = Named::HandleAction(command);
+        tmp = Hittable::HandleAction(command);
         if (tmp != NSC){
-            ans.Add(tmp);
+            return tmp;
         }
-        if (!ans.size()){
-            return NSC;
-        }
-        return ans;
+        return NSC;
     }
 
     ColoredString Help() override {

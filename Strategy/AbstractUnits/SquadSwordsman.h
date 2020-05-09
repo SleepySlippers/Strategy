@@ -10,12 +10,13 @@
 
 class SquadSwordsman : public InSquadWarrior {
 public:
-    SquadSwordsman() {
+    SquadSwordsman(int _hp = 100, int _defence = 50, int _attack = 30, int _attackRange = 1) {
         //maxMovePoints = 3;
-        hp = 100;
-        defence = 40;
-        attack = 80;
-        attackRange = 1;
+        hp = _hp;
+        defence = _defence;
+        attack = _attack;
+        attackRange = _attackRange;
+        type = "Swordsman";
         //appearance = 'S';
     }
 };

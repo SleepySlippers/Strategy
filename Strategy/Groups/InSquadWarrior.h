@@ -13,7 +13,7 @@ class InSquadWarrior : public InSquadUnit, public Group {
 public:
     int attack = 60;
     int attackRange = 1;
-    string type = "Swordsman";
+    string type = "";
 
     ColoredString HandleAction(const string &command) override{
         std::istringstream in(command);
@@ -21,12 +21,12 @@ public:
         in >> cmnd;
         if (cmnd == "Info"){
             ColoredString ans;
-            ans.Add("Attack strength: ");
+            ans.Add(InSquadUnit::HandleAction("Info"));
+            ans.Add(" ATC: ");
             ans.Add(attack, YELLOW);
-            ans.Add("\nAttack range: ");
+            ans.Add(" RNG: ");
             ans.Add(attackRange, YELLOW);
             ans.Add("\n");
-            ans.Add(InSquadUnit::HandleAction("Info"));
             return ans;
         }
         return InSquadUnit::HandleAction(command);

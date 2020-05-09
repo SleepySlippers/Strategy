@@ -6,15 +6,20 @@
 #define MYSTRATEGY_ENEMYFACTORY_H
 
 
-#include "Spawner.h"
+#include "TypedFactory.h"
+#include "../Properties/Handleable.h"
 
-class EnemyFactory {
+class EnemyFactory  : public TypedFactory {
 public:
-    Spawner *spwnr;
+
+    EnemyFactory(int type = ENEMY_HANDLE_TYPE) : TypedFactory(type) {
+
+    }
+    /*Spawner *spawner;
 
     int myType;
 
-    EnemyFactory(int type) : myType(type) {
+    MyFactory(int type) : myType(type)  {
 
     }
 
@@ -24,70 +29,55 @@ public:
     }
 
     Worker *SpawnWorker() {
-        auto tmp = spwnr->SpawnWorker();
+        auto tmp = spawner->SpawnWorker();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*Worker* ans = new Worker;
-        ans->fonColor = BLUE;
-        return ans;*/
     }
-
-    /*Swordsman *SpawnSwordsman() override {
-        Swordsman* ans = new Swordsman;
-        ans->fonColor = BLUE;
-        return ans;
-    }*/
 
     PhysicalSquad * SpawnSwordsman() {
-        auto tmp = spwnr->SpawnSwordsman();
+        auto tmp = spawner->SpawnSwordsman();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*PhysicalSquad * ans = new PhysicalSquad();
-        //Swordsman* ans = new Swordsman;
-        SquadSwordsman *tmp = new SquadSwordsman();
-        ans->squad->Add(tmp);
-        ans->fonColor = BLUE;
-        return ans;*/
     }
 
-    Horseman *SpawnHorseman() {
-        auto tmp = spwnr->SpawnHorseman();
+    Stable *SpawnStable(){
+        auto tmp = spawner->SpawnStable();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*Horseman* ans = new Horseman;
-        ans->fonColor = BLUE;
-        return ans;*/
     }
 
-    Archer *SpawnArcher() {
-        auto tmp = spwnr->SpawnArcher();
+    PhysicalSquad *SpawnHorseman() {
+        auto tmp = spawner->SpawnHorseman();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*Archer* ans = new Archer;
-        ans->fonColor = BLUE;
-        return ans;*/
+    }
+
+    PhysicalSquad *SpawnArcher() {
+        auto tmp = spawner->SpawnArcher();
+        DoSomethingWithSpawnedObject(tmp);
+        return tmp;
     }
 
     TownHall *SpawnTownhall() {
-        auto tmp = spwnr->SpawnTownhall();
+        auto tmp = spawner->SpawnTownHall();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*TownHall* ans = new TownHall;
-        ans->fonColor = BLUE;
-        return ans;*/
     }
 
     Barracks *SpawnBarracks() {
-        auto tmp = spwnr->SpawnBarracks();
+        auto tmp = spawner->SpawnBarracks();
         DoSomethingWithSpawnedObject(tmp);
         return tmp;
-        /*Barracks* ans = new Barracks;
-        ans->fonColor = BLUE;
-        return ans;*/
     }
+
+    Archery *SpawnArchery() {
+        auto tmp = spawner->SpawnArchery();
+        DoSomethingWithSpawnedObject(tmp);
+        return tmp;
+    }*/
 };
 
-extern EnemyFactory* enemySpawner;
+extern EnemyFactory* pEnemyFactory;
 
 
 #endif //MYSTRATEGY_ENEMYFACTORY_H

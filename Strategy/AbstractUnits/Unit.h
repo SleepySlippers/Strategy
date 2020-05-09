@@ -9,27 +9,36 @@
 #include "../Properties/Movable.h"
 #include "../Properties/Hittable.h"
 #include "../Properties/Named.h"
+#include "../MyUtility.h"
 
 class Unit : public Hittable, public Movable, public Named {
 public:
     ColoredString HandleAction(const string &command) override{
-        ColoredString ans;
-        ColoredString tmp = Hittable::HandleAction(command);
+        std::istringstream in(command);
+        string cmnd;
+        in >> cmnd;
+        // TODO
+        if (cmnd == "Info"){
+            ColoredString ans;
+            ans.Add(Named::HandleAction("Info"));
+            ans.Add(Movable::HandleAction("Info"));
+            ans.Add(Hittable::HandleAction("Info"));
+            ans.Add("\n");
+            return ans;
+        }
+        ColoredString tmp = Named::HandleAction(command);
         if (tmp != NSC){
-            ans.Add(tmp);
+            return tmp;
+        }
+        tmp = Hittable::HandleAction(command);
+        if (tmp != NSC){
+            return tmp;
         }
         tmp = Movable::HandleAction(command);
         if (tmp != NSC){
-            ans.Add(tmp);
+            return tmp;
         }
-        tmp = Named::HandleAction(command);
-        if (tmp != NSC){
-            ans.Add(tmp);
-        }
-        if (!ans.size()){
-            return NSC;
-        }
-        return ans;
+        return NSC;
     }
 
     ColoredString Help() override {
@@ -46,8 +55,10 @@ public:
 
     std::vector<pair<string, string>> CommandsCanHandle() override {
         std::vector<pair<string, string>> ans = Movable::CommandsCanHandle();
-        ans += Hittable::CommandsCanHandle();
-        ans += Named::CommandsCanHandle();
+        //ans += Hittable::CommandsCanHandle();
+        AddVector(ans, Hittable::CommandsCanHandle());
+        //ans += Named::CommandsCanHandle();
+        AddVector(ans, Named::CommandsCanHandle());
         return ans;
     }
 

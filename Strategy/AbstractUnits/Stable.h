@@ -1,9 +1,9 @@
 //
-// Created by Arseny's on 10.04.2020.
+// Created by Arseny's on 07.05.2020.
 //
 
-#ifndef MYSTRATEGY_BARRACKS_H
-#define MYSTRATEGY_BARRACKS_H
+#ifndef MYSTRATEGY_STABLE_H
+#define MYSTRATEGY_STABLE_H
 
 
 #include <sstream>
@@ -12,12 +12,11 @@
 #include "../Map.h"
 #include "Swordsman.h"
 #include "../Factory/MyFactory.h"
-#include "PhysicalSquad.h"
 
-class Barracks : public Building {
+class Stable : public Building {
 public:
-    Barracks(){
-        appearance = 'B';
+    Stable(){
+        appearance = 'S';
         color = BROWN;
     }
 
@@ -27,25 +26,25 @@ public:
         std::istringstream in(command);
         std::string cmnd;
         in >> cmnd;
-        if (cmnd == "SpawnSwordsman"){
+        if (cmnd == "SpawnHorseman"){
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            PhysicalSquad* tmp = owner->SpawnSwordsman();
+            PhysicalSquad* tmp = owner->SpawnHorseman();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
-            //tmp->ChangeName(tryName("Swordsman"));
-            return "Swordsman spawned with name " + tmp->GetName() + "\n";
+            //tmp->ChangeName(tryName("Horseman"));
+            return "Horseman spawned with name " + tmp->GetName() + "\n";
         }
         return Building::HandleAction(command);
     }
 
     std::vector<pair<string, string>> CommandsCanHandle() override {
         std::vector<pair<string, string>> ans = Building::CommandsCanHandle();
-        ans.push_back({"SpawnSwordsman", "- spawn an Swordsman to right cell if it's free"});
+        ans.emplace_back("SpawnHorseman", "- spawn a Horseman to right cell if it's free");
         return ans;
     }
 };
 
 
-#endif //MYSTRATEGY_BARRACKS_H
+#endif //MYSTRATEGY_STABLE_H

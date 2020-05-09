@@ -9,7 +9,7 @@
 
 #define NSC "No suitable command\n"
 
-#include "../ColoredString.h"
+#include "../DrawTools/ColoredString.h"
 
 #include <map>
 

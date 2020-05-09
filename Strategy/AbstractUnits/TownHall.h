@@ -27,7 +27,8 @@ public:
             if (!globalMap->IsEmpty(posX + 1, posY)){
                 return "Spawn place is taken\n";
             }
-            Worker* tmp = mySpawner->SpawnWorker();
+            Worker* tmp = owner->SpawnWorker();
+            tmp->owner = owner;
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
             tmp->ChangeName(tryName("Worker"));
