@@ -93,7 +93,16 @@
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Archer.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Archery.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Archery.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Barracks.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Building.cpp">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Building.h">
@@ -105,10 +114,22 @@
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/InSquadUnit.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/PhysicalSquad.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/SquadArcher.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/SquadHorseman.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/SquadSwordsman.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Stable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Swordsman.h">
@@ -123,22 +144,46 @@
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Warrior.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Worker.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/AbstractUnits/Worker.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/Strategy/ColoredString.h">
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/ColoredString.cpp">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/Strategy/Colorize.h">
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/ColoredString.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/Strategy/Drawer.h">
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/Colorize.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/Colorize.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/DrawInterface.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/DrawInterface.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/DrawTools/Drawer.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/EnemyFactory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/EnglandFactory.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/EnglandFactory.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/Factory.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/Factory.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Factory/FranceFactory.h">
@@ -150,6 +195,15 @@
 		<Unit filename="D:/CLionProjects/Strategy/Factory/Spawner.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/TypedFactory.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Factory/TypedFactory.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/FractionChoose.h">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Groups/Group.h">
 			<Option target="MyStrategy"/>
 		</Unit>
@@ -159,22 +213,52 @@
 		<Unit filename="D:/CLionProjects/Strategy/Groups/Squad.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/InputDecorator.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/InputDecorator.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/MainHandler.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/MainHandler.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Map.cpp">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Map.h">
 			<Option target="MyStrategy"/>
 		</Unit>
-		<Unit filename="D:/CLionProjects/Strategy/MyUtilite.h">
+		<Unit filename="D:/CLionProjects/Strategy/MapInit.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/MapInit.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/MyUtility.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/MyUtility.h">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Properties/Handleable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Hittable.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Properties/Hittable.h">
 			<Option target="MyStrategy"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Movable.cpp">
+			<Option target="MyStrategy"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Properties/Movable.h">
+			<Option target="MyStrategy"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Strategy/Properties/Named.cpp">
 			<Option target="MyStrategy"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Strategy/Properties/Named.h">

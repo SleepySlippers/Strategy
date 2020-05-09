@@ -122,6 +122,492 @@ MyStrategy/fast:
 	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/build
 .PHONY : MyStrategy/fast
 
+AbstractUnits/Archery.obj: AbstractUnits/Archery.cpp.obj
+
+.PHONY : AbstractUnits/Archery.obj
+
+# target to build an object file
+AbstractUnits/Archery.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj
+.PHONY : AbstractUnits/Archery.cpp.obj
+
+AbstractUnits/Archery.i: AbstractUnits/Archery.cpp.i
+
+.PHONY : AbstractUnits/Archery.i
+
+# target to preprocess a source file
+AbstractUnits/Archery.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.i
+.PHONY : AbstractUnits/Archery.cpp.i
+
+AbstractUnits/Archery.s: AbstractUnits/Archery.cpp.s
+
+.PHONY : AbstractUnits/Archery.s
+
+# target to generate assembly for a file
+AbstractUnits/Archery.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.s
+.PHONY : AbstractUnits/Archery.cpp.s
+
+AbstractUnits/Building.obj: AbstractUnits/Building.cpp.obj
+
+.PHONY : AbstractUnits/Building.obj
+
+# target to build an object file
+AbstractUnits/Building.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj
+.PHONY : AbstractUnits/Building.cpp.obj
+
+AbstractUnits/Building.i: AbstractUnits/Building.cpp.i
+
+.PHONY : AbstractUnits/Building.i
+
+# target to preprocess a source file
+AbstractUnits/Building.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.i
+.PHONY : AbstractUnits/Building.cpp.i
+
+AbstractUnits/Building.s: AbstractUnits/Building.cpp.s
+
+.PHONY : AbstractUnits/Building.s
+
+# target to generate assembly for a file
+AbstractUnits/Building.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.s
+.PHONY : AbstractUnits/Building.cpp.s
+
+AbstractUnits/PhysicalSquad.obj: AbstractUnits/PhysicalSquad.cpp.obj
+
+.PHONY : AbstractUnits/PhysicalSquad.obj
+
+# target to build an object file
+AbstractUnits/PhysicalSquad.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj
+.PHONY : AbstractUnits/PhysicalSquad.cpp.obj
+
+AbstractUnits/PhysicalSquad.i: AbstractUnits/PhysicalSquad.cpp.i
+
+.PHONY : AbstractUnits/PhysicalSquad.i
+
+# target to preprocess a source file
+AbstractUnits/PhysicalSquad.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.i
+.PHONY : AbstractUnits/PhysicalSquad.cpp.i
+
+AbstractUnits/PhysicalSquad.s: AbstractUnits/PhysicalSquad.cpp.s
+
+.PHONY : AbstractUnits/PhysicalSquad.s
+
+# target to generate assembly for a file
+AbstractUnits/PhysicalSquad.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.s
+.PHONY : AbstractUnits/PhysicalSquad.cpp.s
+
+AbstractUnits/Worker.obj: AbstractUnits/Worker.cpp.obj
+
+.PHONY : AbstractUnits/Worker.obj
+
+# target to build an object file
+AbstractUnits/Worker.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj
+.PHONY : AbstractUnits/Worker.cpp.obj
+
+AbstractUnits/Worker.i: AbstractUnits/Worker.cpp.i
+
+.PHONY : AbstractUnits/Worker.i
+
+# target to preprocess a source file
+AbstractUnits/Worker.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.i
+.PHONY : AbstractUnits/Worker.cpp.i
+
+AbstractUnits/Worker.s: AbstractUnits/Worker.cpp.s
+
+.PHONY : AbstractUnits/Worker.s
+
+# target to generate assembly for a file
+AbstractUnits/Worker.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.s
+.PHONY : AbstractUnits/Worker.cpp.s
+
+DrawTools/ColoredString.obj: DrawTools/ColoredString.cpp.obj
+
+.PHONY : DrawTools/ColoredString.obj
+
+# target to build an object file
+DrawTools/ColoredString.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj
+.PHONY : DrawTools/ColoredString.cpp.obj
+
+DrawTools/ColoredString.i: DrawTools/ColoredString.cpp.i
+
+.PHONY : DrawTools/ColoredString.i
+
+# target to preprocess a source file
+DrawTools/ColoredString.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.i
+.PHONY : DrawTools/ColoredString.cpp.i
+
+DrawTools/ColoredString.s: DrawTools/ColoredString.cpp.s
+
+.PHONY : DrawTools/ColoredString.s
+
+# target to generate assembly for a file
+DrawTools/ColoredString.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.s
+.PHONY : DrawTools/ColoredString.cpp.s
+
+DrawTools/Colorize.obj: DrawTools/Colorize.cpp.obj
+
+.PHONY : DrawTools/Colorize.obj
+
+# target to build an object file
+DrawTools/Colorize.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj
+.PHONY : DrawTools/Colorize.cpp.obj
+
+DrawTools/Colorize.i: DrawTools/Colorize.cpp.i
+
+.PHONY : DrawTools/Colorize.i
+
+# target to preprocess a source file
+DrawTools/Colorize.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.i
+.PHONY : DrawTools/Colorize.cpp.i
+
+DrawTools/Colorize.s: DrawTools/Colorize.cpp.s
+
+.PHONY : DrawTools/Colorize.s
+
+# target to generate assembly for a file
+DrawTools/Colorize.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.s
+.PHONY : DrawTools/Colorize.cpp.s
+
+DrawTools/DrawInterface.obj: DrawTools/DrawInterface.cpp.obj
+
+.PHONY : DrawTools/DrawInterface.obj
+
+# target to build an object file
+DrawTools/DrawInterface.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj
+.PHONY : DrawTools/DrawInterface.cpp.obj
+
+DrawTools/DrawInterface.i: DrawTools/DrawInterface.cpp.i
+
+.PHONY : DrawTools/DrawInterface.i
+
+# target to preprocess a source file
+DrawTools/DrawInterface.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.i
+.PHONY : DrawTools/DrawInterface.cpp.i
+
+DrawTools/DrawInterface.s: DrawTools/DrawInterface.cpp.s
+
+.PHONY : DrawTools/DrawInterface.s
+
+# target to generate assembly for a file
+DrawTools/DrawInterface.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.s
+.PHONY : DrawTools/DrawInterface.cpp.s
+
+Factory/EnglandFactory.obj: Factory/EnglandFactory.cpp.obj
+
+.PHONY : Factory/EnglandFactory.obj
+
+# target to build an object file
+Factory/EnglandFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj
+.PHONY : Factory/EnglandFactory.cpp.obj
+
+Factory/EnglandFactory.i: Factory/EnglandFactory.cpp.i
+
+.PHONY : Factory/EnglandFactory.i
+
+# target to preprocess a source file
+Factory/EnglandFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.i
+.PHONY : Factory/EnglandFactory.cpp.i
+
+Factory/EnglandFactory.s: Factory/EnglandFactory.cpp.s
+
+.PHONY : Factory/EnglandFactory.s
+
+# target to generate assembly for a file
+Factory/EnglandFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.s
+.PHONY : Factory/EnglandFactory.cpp.s
+
+Factory/Factory.obj: Factory/Factory.cpp.obj
+
+.PHONY : Factory/Factory.obj
+
+# target to build an object file
+Factory/Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj
+.PHONY : Factory/Factory.cpp.obj
+
+Factory/Factory.i: Factory/Factory.cpp.i
+
+.PHONY : Factory/Factory.i
+
+# target to preprocess a source file
+Factory/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.i
+.PHONY : Factory/Factory.cpp.i
+
+Factory/Factory.s: Factory/Factory.cpp.s
+
+.PHONY : Factory/Factory.s
+
+# target to generate assembly for a file
+Factory/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.s
+.PHONY : Factory/Factory.cpp.s
+
+Factory/TypedFactory.obj: Factory/TypedFactory.cpp.obj
+
+.PHONY : Factory/TypedFactory.obj
+
+# target to build an object file
+Factory/TypedFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj
+.PHONY : Factory/TypedFactory.cpp.obj
+
+Factory/TypedFactory.i: Factory/TypedFactory.cpp.i
+
+.PHONY : Factory/TypedFactory.i
+
+# target to preprocess a source file
+Factory/TypedFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.i
+.PHONY : Factory/TypedFactory.cpp.i
+
+Factory/TypedFactory.s: Factory/TypedFactory.cpp.s
+
+.PHONY : Factory/TypedFactory.s
+
+# target to generate assembly for a file
+Factory/TypedFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.s
+.PHONY : Factory/TypedFactory.cpp.s
+
+InputDecorator.obj: InputDecorator.cpp.obj
+
+.PHONY : InputDecorator.obj
+
+# target to build an object file
+InputDecorator.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj
+.PHONY : InputDecorator.cpp.obj
+
+InputDecorator.i: InputDecorator.cpp.i
+
+.PHONY : InputDecorator.i
+
+# target to preprocess a source file
+InputDecorator.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/InputDecorator.cpp.i
+.PHONY : InputDecorator.cpp.i
+
+InputDecorator.s: InputDecorator.cpp.s
+
+.PHONY : InputDecorator.s
+
+# target to generate assembly for a file
+InputDecorator.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/InputDecorator.cpp.s
+.PHONY : InputDecorator.cpp.s
+
+MainHandler.obj: MainHandler.cpp.obj
+
+.PHONY : MainHandler.obj
+
+# target to build an object file
+MainHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj
+.PHONY : MainHandler.cpp.obj
+
+MainHandler.i: MainHandler.cpp.i
+
+.PHONY : MainHandler.i
+
+# target to preprocess a source file
+MainHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MainHandler.cpp.i
+.PHONY : MainHandler.cpp.i
+
+MainHandler.s: MainHandler.cpp.s
+
+.PHONY : MainHandler.s
+
+# target to generate assembly for a file
+MainHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MainHandler.cpp.s
+.PHONY : MainHandler.cpp.s
+
+Map.obj: Map.cpp.obj
+
+.PHONY : Map.obj
+
+# target to build an object file
+Map.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Map.cpp.obj
+.PHONY : Map.cpp.obj
+
+Map.i: Map.cpp.i
+
+.PHONY : Map.i
+
+# target to preprocess a source file
+Map.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Map.cpp.i
+.PHONY : Map.cpp.i
+
+Map.s: Map.cpp.s
+
+.PHONY : Map.s
+
+# target to generate assembly for a file
+Map.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Map.cpp.s
+.PHONY : Map.cpp.s
+
+MapInit.obj: MapInit.cpp.obj
+
+.PHONY : MapInit.obj
+
+# target to build an object file
+MapInit.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MapInit.cpp.obj
+.PHONY : MapInit.cpp.obj
+
+MapInit.i: MapInit.cpp.i
+
+.PHONY : MapInit.i
+
+# target to preprocess a source file
+MapInit.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MapInit.cpp.i
+.PHONY : MapInit.cpp.i
+
+MapInit.s: MapInit.cpp.s
+
+.PHONY : MapInit.s
+
+# target to generate assembly for a file
+MapInit.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MapInit.cpp.s
+.PHONY : MapInit.cpp.s
+
+MyUtility.obj: MyUtility.cpp.obj
+
+.PHONY : MyUtility.obj
+
+# target to build an object file
+MyUtility.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj
+.PHONY : MyUtility.cpp.obj
+
+MyUtility.i: MyUtility.cpp.i
+
+.PHONY : MyUtility.i
+
+# target to preprocess a source file
+MyUtility.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MyUtility.cpp.i
+.PHONY : MyUtility.cpp.i
+
+MyUtility.s: MyUtility.cpp.s
+
+.PHONY : MyUtility.s
+
+# target to generate assembly for a file
+MyUtility.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/MyUtility.cpp.s
+.PHONY : MyUtility.cpp.s
+
+Properties/Hittable.obj: Properties/Hittable.cpp.obj
+
+.PHONY : Properties/Hittable.obj
+
+# target to build an object file
+Properties/Hittable.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj
+.PHONY : Properties/Hittable.cpp.obj
+
+Properties/Hittable.i: Properties/Hittable.cpp.i
+
+.PHONY : Properties/Hittable.i
+
+# target to preprocess a source file
+Properties/Hittable.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.i
+.PHONY : Properties/Hittable.cpp.i
+
+Properties/Hittable.s: Properties/Hittable.cpp.s
+
+.PHONY : Properties/Hittable.s
+
+# target to generate assembly for a file
+Properties/Hittable.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.s
+.PHONY : Properties/Hittable.cpp.s
+
+Properties/Movable.obj: Properties/Movable.cpp.obj
+
+.PHONY : Properties/Movable.obj
+
+# target to build an object file
+Properties/Movable.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj
+.PHONY : Properties/Movable.cpp.obj
+
+Properties/Movable.i: Properties/Movable.cpp.i
+
+.PHONY : Properties/Movable.i
+
+# target to preprocess a source file
+Properties/Movable.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.i
+.PHONY : Properties/Movable.cpp.i
+
+Properties/Movable.s: Properties/Movable.cpp.s
+
+.PHONY : Properties/Movable.s
+
+# target to generate assembly for a file
+Properties/Movable.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.s
+.PHONY : Properties/Movable.cpp.s
+
+Properties/Named.obj: Properties/Named.cpp.obj
+
+.PHONY : Properties/Named.obj
+
+# target to build an object file
+Properties/Named.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj
+.PHONY : Properties/Named.cpp.obj
+
+Properties/Named.i: Properties/Named.cpp.i
+
+.PHONY : Properties/Named.i
+
+# target to preprocess a source file
+Properties/Named.cpp.i:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Named.cpp.i
+.PHONY : Properties/Named.cpp.i
+
+Properties/Named.s: Properties/Named.cpp.s
+
+.PHONY : Properties/Named.s
+
+# target to generate assembly for a file
+Properties/Named.cpp.s:
+	$(MAKE) -f CMakeFiles\MyStrategy.dir\build.make CMakeFiles/MyStrategy.dir/Properties/Named.cpp.s
+.PHONY : Properties/Named.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +644,60 @@ help:
 	@echo ... MyStrategy
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AbstractUnits/Archery.obj
+	@echo ... AbstractUnits/Archery.i
+	@echo ... AbstractUnits/Archery.s
+	@echo ... AbstractUnits/Building.obj
+	@echo ... AbstractUnits/Building.i
+	@echo ... AbstractUnits/Building.s
+	@echo ... AbstractUnits/PhysicalSquad.obj
+	@echo ... AbstractUnits/PhysicalSquad.i
+	@echo ... AbstractUnits/PhysicalSquad.s
+	@echo ... AbstractUnits/Worker.obj
+	@echo ... AbstractUnits/Worker.i
+	@echo ... AbstractUnits/Worker.s
+	@echo ... DrawTools/ColoredString.obj
+	@echo ... DrawTools/ColoredString.i
+	@echo ... DrawTools/ColoredString.s
+	@echo ... DrawTools/Colorize.obj
+	@echo ... DrawTools/Colorize.i
+	@echo ... DrawTools/Colorize.s
+	@echo ... DrawTools/DrawInterface.obj
+	@echo ... DrawTools/DrawInterface.i
+	@echo ... DrawTools/DrawInterface.s
+	@echo ... Factory/EnglandFactory.obj
+	@echo ... Factory/EnglandFactory.i
+	@echo ... Factory/EnglandFactory.s
+	@echo ... Factory/Factory.obj
+	@echo ... Factory/Factory.i
+	@echo ... Factory/Factory.s
+	@echo ... Factory/TypedFactory.obj
+	@echo ... Factory/TypedFactory.i
+	@echo ... Factory/TypedFactory.s
+	@echo ... InputDecorator.obj
+	@echo ... InputDecorator.i
+	@echo ... InputDecorator.s
+	@echo ... MainHandler.obj
+	@echo ... MainHandler.i
+	@echo ... MainHandler.s
+	@echo ... Map.obj
+	@echo ... Map.i
+	@echo ... Map.s
+	@echo ... MapInit.obj
+	@echo ... MapInit.i
+	@echo ... MapInit.s
+	@echo ... MyUtility.obj
+	@echo ... MyUtility.i
+	@echo ... MyUtility.s
+	@echo ... Properties/Hittable.obj
+	@echo ... Properties/Hittable.i
+	@echo ... Properties/Hittable.s
+	@echo ... Properties/Movable.obj
+	@echo ... Properties/Movable.i
+	@echo ... Properties/Movable.s
+	@echo ... Properties/Named.obj
+	@echo ... Properties/Named.i
+	@echo ... Properties/Named.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

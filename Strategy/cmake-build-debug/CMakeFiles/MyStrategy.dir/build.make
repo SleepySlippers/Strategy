@@ -69,19 +69,289 @@ CMakeFiles/MyStrategy.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\main.cpp -o CMakeFiles\MyStrategy.dir\main.cpp.s
 
+CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj: ../AbstractUnits/PhysicalSquad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\AbstractUnits\PhysicalSquad.cpp.obj -c D:\CLionProjects\Strategy\AbstractUnits\PhysicalSquad.cpp
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\AbstractUnits\PhysicalSquad.cpp > CMakeFiles\MyStrategy.dir\AbstractUnits\PhysicalSquad.cpp.i
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\AbstractUnits\PhysicalSquad.cpp -o CMakeFiles\MyStrategy.dir\AbstractUnits\PhysicalSquad.cpp.s
+
+CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj: ../DrawTools/Colorize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\DrawTools\Colorize.cpp.obj -c D:\CLionProjects\Strategy\DrawTools\Colorize.cpp
+
+CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\DrawTools\Colorize.cpp > CMakeFiles\MyStrategy.dir\DrawTools\Colorize.cpp.i
+
+CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\DrawTools\Colorize.cpp -o CMakeFiles\MyStrategy.dir\DrawTools\Colorize.cpp.s
+
+CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj: ../DrawTools/ColoredString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\DrawTools\ColoredString.cpp.obj -c D:\CLionProjects\Strategy\DrawTools\ColoredString.cpp
+
+CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\DrawTools\ColoredString.cpp > CMakeFiles\MyStrategy.dir\DrawTools\ColoredString.cpp.i
+
+CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\DrawTools\ColoredString.cpp -o CMakeFiles\MyStrategy.dir\DrawTools\ColoredString.cpp.s
+
+CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj: ../Properties/Movable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Properties\Movable.cpp.obj -c D:\CLionProjects\Strategy\Properties\Movable.cpp
+
+CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Properties\Movable.cpp > CMakeFiles\MyStrategy.dir\Properties\Movable.cpp.i
+
+CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Properties\Movable.cpp -o CMakeFiles\MyStrategy.dir\Properties\Movable.cpp.s
+
+CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj: ../Properties/Named.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Properties\Named.cpp.obj -c D:\CLionProjects\Strategy\Properties\Named.cpp
+
+CMakeFiles/MyStrategy.dir/Properties/Named.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Properties/Named.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Properties\Named.cpp > CMakeFiles\MyStrategy.dir\Properties\Named.cpp.i
+
+CMakeFiles/MyStrategy.dir/Properties/Named.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Properties/Named.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Properties\Named.cpp -o CMakeFiles\MyStrategy.dir\Properties\Named.cpp.s
+
+CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj: ../MyUtility.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\MyUtility.cpp.obj -c D:\CLionProjects\Strategy\MyUtility.cpp
+
+CMakeFiles/MyStrategy.dir/MyUtility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/MyUtility.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\MyUtility.cpp > CMakeFiles\MyStrategy.dir\MyUtility.cpp.i
+
+CMakeFiles/MyStrategy.dir/MyUtility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/MyUtility.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\MyUtility.cpp -o CMakeFiles\MyStrategy.dir\MyUtility.cpp.s
+
+CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj: ../Properties/Hittable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Properties\Hittable.cpp.obj -c D:\CLionProjects\Strategy\Properties\Hittable.cpp
+
+CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Properties\Hittable.cpp > CMakeFiles\MyStrategy.dir\Properties\Hittable.cpp.i
+
+CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Properties\Hittable.cpp -o CMakeFiles\MyStrategy.dir\Properties\Hittable.cpp.s
+
+CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj: ../Factory/TypedFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Factory\TypedFactory.cpp.obj -c D:\CLionProjects\Strategy\Factory\TypedFactory.cpp
+
+CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Factory\TypedFactory.cpp > CMakeFiles\MyStrategy.dir\Factory\TypedFactory.cpp.i
+
+CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Factory\TypedFactory.cpp -o CMakeFiles\MyStrategy.dir\Factory\TypedFactory.cpp.s
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj: ../AbstractUnits/Worker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\AbstractUnits\Worker.cpp.obj -c D:\CLionProjects\Strategy\AbstractUnits\Worker.cpp
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\AbstractUnits\Worker.cpp > CMakeFiles\MyStrategy.dir\AbstractUnits\Worker.cpp.i
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\AbstractUnits\Worker.cpp -o CMakeFiles\MyStrategy.dir\AbstractUnits\Worker.cpp.s
+
+CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj: ../Factory/Factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Factory\Factory.cpp.obj -c D:\CLionProjects\Strategy\Factory\Factory.cpp
+
+CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Factory\Factory.cpp > CMakeFiles\MyStrategy.dir\Factory\Factory.cpp.i
+
+CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Factory\Factory.cpp -o CMakeFiles\MyStrategy.dir\Factory\Factory.cpp.s
+
+CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj: ../Factory/EnglandFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Factory\EnglandFactory.cpp.obj -c D:\CLionProjects\Strategy\Factory\EnglandFactory.cpp
+
+CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Factory\EnglandFactory.cpp > CMakeFiles\MyStrategy.dir\Factory\EnglandFactory.cpp.i
+
+CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Factory\EnglandFactory.cpp -o CMakeFiles\MyStrategy.dir\Factory\EnglandFactory.cpp.s
+
+CMakeFiles/MyStrategy.dir/MapInit.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/MapInit.cpp.obj: ../MapInit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyStrategy.dir/MapInit.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\MapInit.cpp.obj -c D:\CLionProjects\Strategy\MapInit.cpp
+
+CMakeFiles/MyStrategy.dir/MapInit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/MapInit.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\MapInit.cpp > CMakeFiles\MyStrategy.dir\MapInit.cpp.i
+
+CMakeFiles/MyStrategy.dir/MapInit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/MapInit.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\MapInit.cpp -o CMakeFiles\MyStrategy.dir\MapInit.cpp.s
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj: ../AbstractUnits/Building.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\AbstractUnits\Building.cpp.obj -c D:\CLionProjects\Strategy\AbstractUnits\Building.cpp
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\AbstractUnits\Building.cpp > CMakeFiles\MyStrategy.dir\AbstractUnits\Building.cpp.i
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\AbstractUnits\Building.cpp -o CMakeFiles\MyStrategy.dir\AbstractUnits\Building.cpp.s
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj: ../AbstractUnits/Archery.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\AbstractUnits\Archery.cpp.obj -c D:\CLionProjects\Strategy\AbstractUnits\Archery.cpp
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\AbstractUnits\Archery.cpp > CMakeFiles\MyStrategy.dir\AbstractUnits\Archery.cpp.i
+
+CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\AbstractUnits\Archery.cpp -o CMakeFiles\MyStrategy.dir\AbstractUnits\Archery.cpp.s
+
+CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj: ../MainHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\MainHandler.cpp.obj -c D:\CLionProjects\Strategy\MainHandler.cpp
+
+CMakeFiles/MyStrategy.dir/MainHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/MainHandler.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\MainHandler.cpp > CMakeFiles\MyStrategy.dir\MainHandler.cpp.i
+
+CMakeFiles/MyStrategy.dir/MainHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/MainHandler.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\MainHandler.cpp -o CMakeFiles\MyStrategy.dir\MainHandler.cpp.s
+
+CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj: ../InputDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\InputDecorator.cpp.obj -c D:\CLionProjects\Strategy\InputDecorator.cpp
+
+CMakeFiles/MyStrategy.dir/InputDecorator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/InputDecorator.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\InputDecorator.cpp > CMakeFiles\MyStrategy.dir\InputDecorator.cpp.i
+
+CMakeFiles/MyStrategy.dir/InputDecorator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/InputDecorator.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\InputDecorator.cpp -o CMakeFiles\MyStrategy.dir\InputDecorator.cpp.s
+
+CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj: ../DrawTools/DrawInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\DrawTools\DrawInterface.cpp.obj -c D:\CLionProjects\Strategy\DrawTools\DrawInterface.cpp
+
+CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\DrawTools\DrawInterface.cpp > CMakeFiles\MyStrategy.dir\DrawTools\DrawInterface.cpp.i
+
+CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\DrawTools\DrawInterface.cpp -o CMakeFiles\MyStrategy.dir\DrawTools\DrawInterface.cpp.s
+
+CMakeFiles/MyStrategy.dir/Map.cpp.obj: CMakeFiles/MyStrategy.dir/flags.make
+CMakeFiles/MyStrategy.dir/Map.cpp.obj: ../Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyStrategy.dir/Map.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyStrategy.dir\Map.cpp.obj -c D:\CLionProjects\Strategy\Map.cpp
+
+CMakeFiles/MyStrategy.dir/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyStrategy.dir/Map.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\Strategy\Map.cpp > CMakeFiles\MyStrategy.dir\Map.cpp.i
+
+CMakeFiles/MyStrategy.dir/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyStrategy.dir/Map.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\Strategy\Map.cpp -o CMakeFiles\MyStrategy.dir\Map.cpp.s
+
 # Object files for target MyStrategy
 MyStrategy_OBJECTS = \
-"CMakeFiles/MyStrategy.dir/main.cpp.obj"
+"CMakeFiles/MyStrategy.dir/main.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/MapInit.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj" \
+"CMakeFiles/MyStrategy.dir/Map.cpp.obj"
 
 # External object files for target MyStrategy
 MyStrategy_EXTERNAL_OBJECTS =
 
 MyStrategy.exe: CMakeFiles/MyStrategy.dir/main.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/AbstractUnits/PhysicalSquad.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/DrawTools/Colorize.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/DrawTools/ColoredString.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Properties/Movable.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Properties/Named.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/MyUtility.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Properties/Hittable.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Factory/TypedFactory.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/AbstractUnits/Worker.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Factory/Factory.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Factory/EnglandFactory.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/MapInit.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/AbstractUnits/Building.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/AbstractUnits/Archery.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/MainHandler.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/InputDecorator.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/DrawTools/DrawInterface.cpp.obj
+MyStrategy.exe: CMakeFiles/MyStrategy.dir/Map.cpp.obj
 MyStrategy.exe: CMakeFiles/MyStrategy.dir/build.make
 MyStrategy.exe: CMakeFiles/MyStrategy.dir/linklibs.rsp
 MyStrategy.exe: CMakeFiles/MyStrategy.dir/objects1.rsp
 MyStrategy.exe: CMakeFiles/MyStrategy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyStrategy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\Strategy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable MyStrategy.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyStrategy.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
