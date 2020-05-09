@@ -5,10 +5,11 @@
 #include "Building.h"
 
 #include "../MyUtility.h"
+#include "../Map.h"
 
 ColoredString Building::HandleAction(const string &command) {
     ColoredString ans;
-    ColoredString tmp = Hittable::HandleAction(command);
+    ColoredString tmp = Named::HandleAction(command);
     if (tmp != NSC){
         ans.Add(tmp);
     }
@@ -16,7 +17,7 @@ ColoredString Building::HandleAction(const string &command) {
     if (tmp != NSC){
         ans.Add(tmp);
     }
-    tmp = Named::HandleAction(command);
+    tmp = Hittable::HandleAction(command);
     if (tmp != NSC){
         ans.Add(tmp);
     }
@@ -39,4 +40,8 @@ std::vector<pair<string, string>> Building::CommandsCanHandle() {
     ans += PhysicalObject::CommandsCanHandle();
     ans += Named::CommandsCanHandle();
     return ans;
+}
+
+void Building::OnDeath() {
+    globalMap->Delete(posX, posY);
 }

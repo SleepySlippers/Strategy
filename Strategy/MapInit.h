@@ -5,8 +5,6 @@
 #ifndef MYSTRATEGY_MAPINIT_H
 #define MYSTRATEGY_MAPINIT_H
 
-void TownHallInit();
-
 void MapInit();
 
 

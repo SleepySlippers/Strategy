@@ -19,6 +19,8 @@ public:
     Barracks(){
         appearance = 'B';
         color = BROWN;
+        hp = 1300;
+        defence = 80;
     }
 
 
@@ -32,6 +34,7 @@ public:
                 return "Spawn place is taken\n";
             }
             PhysicalSquad* tmp = owner->SpawnSwordsman();
+            tmp->GetMyType() = GetMyType();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
             //tmp->ChangeName(tryName("Swordsman"));

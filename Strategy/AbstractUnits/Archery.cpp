@@ -12,6 +12,8 @@
 Archery::Archery() {
     appearance = 'A';
     color = BROWN;
+    defence = 60;
+    hp = 1000;
 }
 
 ColoredString Archery::HandleAction(const string &command) {
@@ -23,6 +25,7 @@ ColoredString Archery::HandleAction(const string &command) {
             return "Spawn place is taken\n";
         }
         PhysicalSquad* tmp = owner->SpawnArcher();
+        tmp->GetMyType() = GetMyType();
         tmp->TeleportTo(posX + 1, posY);
         globalMap->Place(tmp);
         //tmp->ChangeName(tryName("Archer"));

@@ -62,3 +62,7 @@ std::vector<pair<string, string>> Named::CommandsCanHandle() {
     }
     return ans;
 }
+
+Named::~Named() {
+    names.erase(name);
+}

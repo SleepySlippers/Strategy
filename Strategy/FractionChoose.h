@@ -19,6 +19,7 @@ void FractionChoose(){
     string tmp;
     ColoredString ans;
     while (true){
+        draw.fill(0, 0, 100, 100, ' ');
         ans.Add("Choose fraction : ");
         ans.Add("Fr", BLUE);
         ans.Add("an");

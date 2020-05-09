@@ -15,6 +15,8 @@ public:
     ColoredString HandleAction(const std::string &command) override;
 
     std::vector<pair<string, string>> CommandsCanHandle() override;
+
+    virtual ~Worker() = default;
 };
 
 

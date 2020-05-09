@@ -29,7 +29,7 @@ void drawHelpInfo() {
     tmp.Add("You can move ");
     tmp.Add("chosen", BLACK, 13);
     tmp.Add(" field by arrows\n");// or command Choose %name%\n");
-    tmp.Add("You can use ctr + arrow to write the appropriate direction,\n it will be painted ");
+    tmp.Add("You can use ctrl + arrow to write the appropriate direction,\n it will be painted ");
     tmp.Add("yellow", DirColor);
     tmp.Add("\n");
     tmp.Add("You can use ");

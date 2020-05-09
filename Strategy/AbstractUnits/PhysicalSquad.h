@@ -5,12 +5,12 @@
 #ifndef MYSTRATEGY_PHYSICALSQUAD_H
 #define MYSTRATEGY_PHYSICALSQUAD_H
 
-//class Movable;
-//class Named;
 class Squad;
+class ColoredString;
 
 #include "../Properties/Movable.h"
 #include "../Properties/Named.h"
+#include "Building.h"
 
 class PhysicalSquad : public Movable, public Named {
 public:
@@ -18,7 +18,9 @@ public:
 
     PhysicalSquad();
 
-    void AttackSquad(Squad* enemy);
+    void AttackSquad(Squad* enemy) const;
+
+    void AttackNonSquad(Hittable *hittable);
 
     bool CanHandle(int HandlerType) override;
 

@@ -7,9 +7,11 @@
 
 #include "../Map.h"
 #include "../Groups/Squad.h"
+#include "../Groups/InSquadWarrior.h"
+#include "Building.h"
 
 
-void PhysicalSquad::AttackSquad(Squad *enemy) {
+void PhysicalSquad::AttackSquad(Squad *enemy) const {
     // TODO
     auto tmp = squad->GetAllMembers();
     for (auto &it : tmp){
@@ -74,10 +76,6 @@ ColoredString PhysicalSquad::HandleAction(const string &command) {
                     trySquad->squad = nullptr;
                     trySquad->DestroySelf();
                     Movable::HandleAction(command);
-                    //trySquad->squad->Add(squad);
-                    //mainHandler->chosen = trySquad;
-                    //squad = nullptr;
-                    //DestroySelf();
                     return "Merged\n";
                 }
             }
@@ -101,7 +99,17 @@ ColoredString PhysicalSquad::HandleAction(const string &command) {
                     nowMovePoints = 0;
                     return "Attacked\n";
                 }
-                return "Target is not enemy squad\n";
+                if (trySquad == nullptr){
+                    Hittable *hittable = dynamic_cast<Hittable *>(
+                            globalMap->Get(posX + dx[StrToDir(cmnd)], posY + dy[StrToDir(cmnd)])
+                    );
+                    if (hittable != nullptr && !(hittable->CanHandle(GetMyType()))){
+                        AttackNonSquad(hittable);
+                        nowMovePoints = 0;
+                        return "Attacked\n";
+                    }
+                }
+                return "Target is not enemy\n";
             } else {
                 return "Cant attack an empty place\n";
             }
@@ -137,4 +145,13 @@ PhysicalSquad::PhysicalSquad() {
 
 bool PhysicalSquad::CanHandle(int HandlerType) {
     return Movable::CanHandle(HandlerType);
+}
+
+void PhysicalSquad::AttackNonSquad(Hittable *hittable) {
+    auto tmp = squad->GetAllMembers();
+    for (auto &it : tmp){
+        if (!hittable->GetDamage(it->attack)){
+            return;
+        }
+    }
 }

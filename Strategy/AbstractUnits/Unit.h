@@ -62,6 +62,11 @@ public:
         return ans;
     }
 
+    void OnDeath() override {
+        globalMap->Delete(posX, posY);
+    }
+
+    virtual ~Unit() = default;
 };
 
 

@@ -18,6 +18,8 @@ public:
     Stable(){
         appearance = 'S';
         color = BROWN;
+        hp = 1100;
+        defence = 70;
     }
 
 
@@ -31,6 +33,7 @@ public:
                 return "Spawn place is taken\n";
             }
             PhysicalSquad* tmp = owner->SpawnHorseman();
+            tmp->GetMyType() = GetMyType();
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);
             //tmp->ChangeName(tryName("Horseman"));

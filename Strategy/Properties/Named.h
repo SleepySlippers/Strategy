@@ -38,7 +38,7 @@ public:
 
     std::vector<pair<string, string>> CommandsCanHandle() override;
 
-    virtual ~Named()= default;
+    virtual ~Named();;
 };
 
 

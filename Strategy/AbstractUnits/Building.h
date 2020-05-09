@@ -20,6 +20,8 @@ public:
 
     std::vector<pair<string, string>> CommandsCanHandle() override;
 
+    void OnDeath() override;
+
     virtual ~Building()= default;
 };
 

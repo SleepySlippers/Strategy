@@ -4,18 +4,19 @@
 
 #include "MapInit.h"
 
+#include "Factory/MyFactory.h"
+#include "Factory/EnemyFactory.h"
+
+#include "AbstractUnits/PhysicalSquad.h"
 #include "AbstractUnits/TownHall.h"
 #include "AbstractUnits/Archery.h"
 #include "AbstractUnits/Barracks.h"
 #include "AbstractUnits/Stable.h"
 
-#include "AbstractUnits/PhysicalSquad.h"
-
-#include "Factory/MyFactory.h"
-#include "Factory/EnemyFactory.h"
 #include "MainHandler.h"
 
-void TownHallInit() {
+void MapInit() {
+    globalMap = new Map;
     TownHall *Th = pMyFactory->SpawnTownHall();
     Th->TeleportTo(5, 10);
     globalMap->Place(Th);
@@ -52,11 +53,23 @@ void TownHallInit() {
         tmp->HandleAction("SpawnArcher");
         tmp->ChangeName(tryName("Archery"));
     }
+#ifdef _DEB
+    {
+        auto tmp = pEnemyFactory->SpawnWorker();
+        tmp->TeleportTo(8, 11);
+        globalMap->Place(tmp);
+    }
+#endif
     {
         auto tmp = pMyFactory->SpawnBarracks();
         tmp->TeleportTo(7, 13);
         globalMap->Place(tmp);
         tmp->HandleAction("SpawnSwordsman");
+#ifdef _DEB
+        mainHandler->HandleAction("EndTurn");
+        names["Squad5"]->HandleAction("Move Up");
+        names["Squad5"]->HandleAction("Attack Up");
+#endif
         tmp->ChangeName(tryName("Barracks"));
     }
     {
@@ -88,7 +101,7 @@ void TownHallInit() {
         tmp->ChangeName(tryName("EnemyStable"));
     }
     mainHandler->HandleAction("EndTurn");
-#ifdef _DEB
+/*#ifdef _DEB
     PhysicalSquad *tmp = pMyFactory->SpawnSwordsman();
     tmp->TeleportTo(5, 5);
     globalMap->Place(tmp);
@@ -101,10 +114,5 @@ void TownHallInit() {
     mainHandler->HandleAction("Choose Sword1");
     mainHandler->HandleAction("Move Down");
     mainHandler->HandleAction("EndTurn");
-#endif
-}
-
-void MapInit() {
-    globalMap = new Map;
-    TownHallInit();
+#endif*/
 }

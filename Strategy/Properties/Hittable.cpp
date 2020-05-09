@@ -5,12 +5,14 @@
 #include <sstream>
 #include "Hittable.h"
 
-void Hittable::GetDamage(int dmg) {
-    if (hp <= 0) return;
+bool Hittable::GetDamage(int dmg) {
+    if (hp <= 0) return false;
     hp -= dmg * (100 - defence) / 100;
     if (hp <= 0){
         OnDeath();
+        return false;
     }
+    return true;
 }
 
 ColoredString Hittable::HandleAction(const string &command) {
@@ -38,4 +40,10 @@ std::vector<pair<string, string>> Hittable::CommandsCanHandle() {
         ans.push_back({"Info", "- full information"});
     }
     return ans;
+}
+
+void Hittable::DeathCheck() {
+    if (hp <= 0){
+        OnDeath();
+    }
 }

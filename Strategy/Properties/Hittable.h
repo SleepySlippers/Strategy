@@ -14,9 +14,13 @@ public:
     int hp = 100;
     int defence = 0;
 
-    virtual void GetDamage(int dmg);
+    virtual ~Hittable() = default;
 
-    virtual void OnDeath(){}
+    virtual bool GetDamage(int dmg);
+
+    virtual void OnDeath(){};
+
+    virtual void DeathCheck();
 
     ColoredString HandleAction(const std::string& command) override;
 

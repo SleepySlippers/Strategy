@@ -17,6 +17,8 @@ public:
     TownHall(){
         appearance = 'T';
         color = YELLOW;
+        defence = 80;
+        hp = 3000;
     }
 
     ColoredString HandleAction(const std::string &command) override {
@@ -28,6 +30,7 @@ public:
                 return "Spawn place is taken\n";
             }
             Worker* tmp = owner->SpawnWorker();
+            tmp->GetMyType() = GetMyType();
             tmp->owner = owner;
             tmp->TeleportTo(posX + 1, posY);
             globalMap->Place(tmp);

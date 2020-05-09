@@ -1,6 +1,6 @@
 //#define _DEB
 
-#define _DEB_CAN_CONTROL_ENEMY
+//#define _DEB_CAN_CONTROL_ENEMY
 
 #include "Factory/MyFactory.h"
 #include "MainHandler.h"
@@ -23,8 +23,6 @@ Drawer draw;
 
 int main() {
     draw.Init();
-    //std::cin.tie(0);
-    //std::cout.tie(0);
     FractionChoose();
     MapInit();
     ReDrawAll();

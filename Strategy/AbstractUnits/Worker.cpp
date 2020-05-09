@@ -35,6 +35,7 @@ ColoredString Worker::HandleAction(const string &command) {
         } else {
             return NSC;
         }
+        tmp->GetMyType() = GetMyType();
         tmp->TeleportTo(posX + 1, posY);
         globalMap->Place(tmp);
         tmp->ChangeName(tryName(cmnd));
